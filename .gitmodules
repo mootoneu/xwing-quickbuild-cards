@@ -1,0 +1,12 @@
+[submodule "vendor/xwing-data2"]
+	path = vendor/xwing-data2
+	url = https://github.com/guidokessels/xwing-data2.git
+[submodule "vendor/xwing-miniatures-font"]
+	path = vendor/xwing-miniatures-font
+	url = https://github.com/geordanr/xwing-miniatures-font
+[submodule "vendor/paper-css"]
+	path = vendor/paper-css
+	url = https://github.com/cognitom/paper-css.git
+[submodule "vendor/normalize-css"]
+	path = vendor/normalize-css
+	url = https://github.com/necolas/normalize.css.git
