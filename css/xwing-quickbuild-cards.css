@@ -1,3 +1,15 @@
+@media print {
+  menu  {
+    display: none;
+  }
+}
+@media screen {
+  menu  {
+    position: fixed;
+    display: block;
+  }
+}
+
 body
 {
   font-size:11pt;
@@ -123,13 +135,6 @@ i.ship
   padding-right:5px;
 }
 
-/*Factions*/
-.faction-rebelalliance {color:#f0232a;}
-.faction-galacticempire {color:#455bbf;}
-.faction-scumandvillainy {color:#f78121;}
-.faction-resistance {color:#71bf45;}
-.faction-firstorder {color:black;}
-
 /*Variants*/
 .variant-partisant::after {
   color:black;
@@ -139,6 +144,34 @@ i.ship
   font-style: normal;
   font-weight: 40;
 }
+
+/*Menu*/
+menu .faction {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+menu .ship {
+  font-weight: 400;
+  font-size: 8pt;
+  padding-left: 1em;
+}
+
+menu i.xwing-miniatures-ship {
+  color: black;
+}
+menu input[type="checkbox"] {
+  margin-right: 4px !important;
+}
+
+
+
+/*Factions*/
+.faction-rebelalliance {color:#f0232a;}
+.faction-galacticempire {color:#455bbf;}
+.faction-scumandvillainy {color:#f78121;}
+.faction-resistance {color:#71bf45;}
+.faction-firstorder {color:black;}
 
 /*Threat levels*/
 .threat-1 {color:#71bf45;}

@@ -11,14 +11,23 @@
 
     <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/xwing-quickbuild-cards.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 
     <script type="text/javascript">
       $( document ).ready(function() {
         qb.buildCards("#cards-container");
+        menu.buildFactionsMenu("#m-factions", qb);
+        menu.initFilters(localStorage.filters);
+        qb.updateSelectedCards("#cards-container", menu.filters);
       });
     </script>
   </head>
   <body class="A4">
+    <menu>
+      <div id="m-factions" class="menu-group">
+
+      </div>
+    </menu>
     <div id="cards-container">
     </div>
   </body>

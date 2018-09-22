@@ -8,7 +8,8 @@ var qb = {
     var xwingdata_manifest = this.loadJSON(vendorRoot+"data/manifest.json");
     this.xwingdata = {
       "upgrades":[],
-      "pilots":[]
+      "pilots":[],
+      "factions":[]
     };
     //load upgrades
     for (var upgradePath of xwingdata_manifest.upgrades) {
@@ -20,15 +21,21 @@ var qb = {
     }
     //load ships
     for (var faction of xwingdata_manifest.pilots) {
+      var faction_ships = [];
+      var faction_name;
       for (var shipPath of faction.ships) {
         var data = this.loadJSON(vendorRoot+shipPath);
+        var ship_xws = this.xws(this.getFileName(shipPath));
+        faction_ships.push(ship_xws)
         for (var pilot of data.pilots) {
           pilot.faction_xws = faction.faction;
           pilot.ship = data;
-          pilot.ship.xws = this.xws(this.getFileName(shipPath));
+          pilot.ship.xws = ship_xws;
+          faction_name = data.faction;
           this.xwingdata.pilots.push(pilot);
         }
       }
+      this.xwingdata.factions.push({"xws":faction.faction, "name":faction_name, "ships":faction_ships});
     }
   },
   "getFileName":function(path) {
@@ -56,43 +63,54 @@ var qb = {
     this.quickbuilds = this.loadJSON(path);
   },
 
-  //Build cards
-  "nextDual":"A",
-  "dualCards":[],
-  "buildCards":function(container_id) {
+  //Display cards
+  "cards":[],
+  "updateSelectedCards":function(container_id, filters) {
     var ship_counter = 0;
     const page_size = 18;
     var current_page;
 
-    for (var ship_model of this.quickbuilds) {
-      for (var pilot_qb of ship_model.pilots) {
-        if (ship_counter%page_size == 0) {
-          current_page = $("<section>", {"class":"sheet", "id":"page-"+ship_counter/page_size});
-          current_page.appendTo(container_id);
-        }
-        pilot_qb.faction = ship_model.faction;
-        pilot_qb.ship = ship_model.ship;
-        this.buildCard(current_page, pilot_qb, null);
-        ship_counter++;
+    $(".sheet").remove();
+
+    for (var card of this.cards) {
+      if (this.isFiltered(card, filters)) {
+        continue;
       }
-    }
-    for (var dualCard of this.dualCards) {
       if (ship_counter%page_size == 0) {
         current_page = $("<section>", {"class":"sheet", "id":"page-"+ship_counter/page_size});
         current_page.appendTo(container_id);
       }
-      this.buildCard(current_page, dualCard[0], dualCard[1]);
+      card.div.appendTo(current_page);
+      ship_counter++;
     }
   },
-  "buildCard":function(current_page, qb, dual) {
+  "isFiltered":function(card, filters) {
+    if (card.qb.dual != null && card.qb.hasOwnProperty("docked") && filters.indexOf(this.xws(card.qb.docked.faction)+":"+card.qb.docked.ship) !== -1) {
+      return true;
+    }
+    return filters.indexOf(card.pilot.faction_xws+":"+card.pilot.ship.xws) !== -1;
+  },
+
+  //Build cards
+  "nextDual":"A",
+  "dualCards":[],
+  "buildCards":function() {
+    for (var ship_model of this.quickbuilds) {
+      for (var pilot_qb of ship_model.pilots) {
+        pilot_qb.faction = ship_model.faction;
+        pilot_qb.ship = ship_model.ship;
+        this.buildCard(pilot_qb, null);
+      }
+    }
+    for (var dualCard of this.dualCards) {
+      this.buildCard(dualCard[0], dualCard[1]);
+    }
+  },
+  "buildCard":function(qb, dual) {
     var card = $("<div>", {"class":"card"});
     var cost = 0;
 
     var pilot = this.getPilot(qb.pilot, qb.ship);
-    if (pilot == null) {
-      card.appendTo(current_page);
-      return;
-    }
 
     //Ship icon
     $("<i>", {"class":"ship xwing-miniatures-ship xwing-miniatures-ship-"+pilot.ship.xws}).appendTo(card);
@@ -133,15 +151,16 @@ var qb = {
 
     if (qb.hasOwnProperty("docked")) {
       dual = this.getNextDual();
+      qb.docked.dual = dual;
+      qb.dual = dual;
       qb.docked.faction = pilot.ship.faction;
-      qb.docked.ship = qb.docked.ship;
       this.dualCards.push([qb.docked, dual]);
     }
     if (dual != null) {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
 
-    card.appendTo(current_page);
+    this.cards.push({"div":card, "pilot":pilot, "qb":qb});
   },
   "getNextDual":function () {
       var dual = this.nextDual;
