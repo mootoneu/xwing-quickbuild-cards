@@ -2,6 +2,31 @@
 
 A simple tool to print quickbuild cards for X-Wing the miniature game 2.0
 
+## How to print
+1. Select the ships you want on the left side bar (clicking on a faction title will hide/show its ships)
+2. Reload the page
+3. Print it
+
+## What's on the card
+- On the top row from left to right:
+  - Ship icon
+  - Pilot name with
+    - A dot (•) to indicate that the pilot is limited
+    - A force power symbol to indicate that the pilot has force power tokens
+    - An illicit symbol for saw gerrera's partisant ships
+  - Point cost
+  - Threat level
+- In the middle:
+  - List of all upgrade names with
+    - One/Two symbols of the upgrade type
+    - A dot (•) to indicate that the upgrade is limited
+    - A force power symbol to indicate that the upgrade has force power tokens
+- To the right:
+  - A vertical "DUAL #" to indicate the card is part of a pair named #. You must use both cards in your build.  
+- At the bottom:
+  - Faction icon
+  - Card id (generated automatically, subject to change with future release)
+
 ## Ship cost & other informations
 The data come from [Guido Kessels' project xwing-data2](https://github.com/guidokessels/xwing-data2/)
 
@@ -39,7 +64,7 @@ But there are some exceptions such as:
 
 ## Authors
 
-* **Duncan Berenguier** - *Initial work* - [mootoneu](https://github.com/mootoneu)
+* **Mooton.eu** - *Initial work* - [mootoneu](https://github.com/mootoneu)
 
 
 ## License

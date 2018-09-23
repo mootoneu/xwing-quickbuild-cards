@@ -232,3 +232,21 @@ menu input[type="checkbox"] {
 .upgrade-torpedo::before {content: "P "; font-family: XWing; font-style: normal;}
 .upgrade-turret::before {content: "U "; font-family: XWing; font-style: normal;}
 .upgrade-forcepower::before {content: "F "; font-family: XWing; font-style: normal;color:#b17ac1;}
+
+.upgrade-slots-2.upgrade-astromech::before {content: "AA ";}
+.upgrade-slots-2.upgrade-cannon::before {content: "CC ";}
+.upgrade-slots-2.upgrade-cargo::before {content: "GG ";}
+.upgrade-slots-2.upgrade-configuration::before {content: "nn ";}
+.upgrade-slots-2.upgrade-crew::before {content: "WW ";}
+.upgrade-slots-2.upgrade-device::before {content: "BB ";}
+.upgrade-slots-2.upgrade-gunner::before {content: "YY ";}
+.upgrade-slots-2.upgrade-illicit::before {content: "II ";}
+.upgrade-slots-2.upgrade-missile::before {content: "MM ";}
+.upgrade-slots-2.upgrade-modification::before {content: "mm ";}
+.upgrade-slots-2.upgrade-sensor::before {content: "SS ";}
+.upgrade-slots-2.upgrade-talent::before {content: "EE ";}
+.upgrade-slots-2.upgrade-tech::before {content: "XX ";}
+.upgrade-slots-2.upgrade-title::before {content: "tt ";}
+.upgrade-slots-2.upgrade-torpedo::before {content: "PP ";}
+.upgrade-slots-2.upgrade-turret::before {content: "UU ";}
+.upgrade-slots-2.upgrade-forcepower::before {content: "FF ";}

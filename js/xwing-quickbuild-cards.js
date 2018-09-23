@@ -154,7 +154,8 @@ var qb = {
       } else {
         var limited = upgrade.limited == 1 ?" limited":"";
         var force = (upgrade.sides[0].hasOwnProperty("force")?" forcepower forcepower-"+upgrade.sides[0].force:"");
-        var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type});
+        var doubleslot =  (upgrade.sides[0].slots.length == 2?" upgrade-slots-2":"");
+        var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type+doubleslot});
         var span = $("<span>", {"class":"upgrade-name"+limited+force, "text":upgrade.name}).appendTo(li);
         li.appendTo(ul);
       }
