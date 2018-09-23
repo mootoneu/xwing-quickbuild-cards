@@ -39,6 +39,14 @@ var menu = {
 
       factiongroup.appendTo(container_id);
     }
+
+    var searchmenu = $("#m-search");
+    var searchcard_input = $("<input>",{"type":"text", "name":"search-card",  "placeholder":"Card number"})
+    searchcard_input.on("change", function() {
+      qb.viewCard(parseInt(this.value));
+    });
+    searchcard_input.appendTo(searchmenu);
+
   },
   "updateFilter":function (input, checked) {
     var filter = input.data("factionxws")+":"+input.data("xws");

@@ -107,20 +107,20 @@ var qb = {
       this.buildCard(dualCard[0], dualCard[1]);
     }
   },
-  "buildCard":function(qb, dual) {
+  "buildCard":function(pilot_qb, dual) {
     var card = $("<div>", {"class":"card"});
     var cost = 0;
 
-    var pilot = this.getPilot(qb.pilot, qb.ship);
+    var pilot = this.getPilot(pilot_qb.pilot, pilot_qb.ship);
 
     //Ship icon
     $("<i>", {"class":"ship xwing-miniatures-ship xwing-miniatures-ship-"+pilot.ship.xws}).appendTo(card);
 
     //Pilot name + limited
     var limited = pilot.limited == 1 ?" limited":"";
-    var variant = (qb.hasOwnProperty("variant")?" variant-"+qb.variant:"");
+    var variant = (pilot_qb.hasOwnProperty("variant")?" variant-"+pilot_qb.variant:"");
     var force = (pilot.hasOwnProperty("force")?" forcepower forcepower-"+pilot.force:"");
-    var title_text = (qb.hasOwnProperty("title")?qb.title:"") + pilot.name;
+    var title_text = (pilot_qb.hasOwnProperty("title")?pilot_qb.title:"") + pilot.name;
     var title = $("<div>", {"class":"name faction-"+pilot.faction_xws+limited+variant+force, "text":title_text}).appendTo(card);
 
     //update cost
@@ -128,7 +128,7 @@ var qb = {
 
     //Get all upgrades
     var upgrades = [];
-    for (var qb_upg of qb.upgrades) {
+    for (var qb_upg of pilot_qb.upgrades) {
       var upgrade = this.getUpgrade(qb_upg);
       if (upgrade != null){
         cost += this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
@@ -137,12 +137,12 @@ var qb = {
     }
 
     //double ship
-    if (qb.hasOwnProperty("title") && qb.title == "2x ") {
+    if (pilot_qb.hasOwnProperty("title") && pilot_qb.title == "2x ") {
       cost = cost * 2;
     }
 
     //Threat + Cost
-    $("<span>", {"class":"threat threat-"+qb.threat, "text":qb.threat}).appendTo(card);
+    $("<span>", {"class":"threat threat-"+pilot_qb.threat, "text":pilot_qb.threat}).appendTo(card);
     $("<span>", {"class":"cost", "text":cost}).appendTo(card);
 
     //List of upgrades
@@ -162,20 +162,26 @@ var qb = {
     }
     ul.appendTo(card);
 
-    if (qb.hasOwnProperty("docked")) {
+    if (pilot_qb.hasOwnProperty("docked")) {
       dual = this.getNextDual();
-      qb.docked.dual = dual;
-      qb.dual = dual;
-      qb.docked.faction = pilot.ship.faction;
-      this.dualCards.push([qb.docked, dual]);
+      pilot_qb.docked.dual = dual;
+      pilot_qb.dual = dual;
+      pilot_qb.docked.faction = pilot.ship.faction;
+      this.dualCards.push([pilot_qb.docked, dual]);
     }
     if (dual != null) {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
-    $("<i>", {"class":"faction-icon faction-"+pilot.faction_xws}).appendTo(card);
-    $("<span>", {"class":"card-id", "text":++this.nextCardId}).appendTo(card);
 
-    this.cards.push({"div":card, "pilot":pilot, "qb":qb});
+    var data = {"div":card, "pilot":pilot, "qb":qb, "id":++this.nextCardId};
+
+    var icon = $("<i>", {"class":"faction-icon faction-"+pilot.faction_xws, "data-id":data.id}).appendTo(card);
+    icon.on('click', function() {
+        qb.viewCard($(this).data("id"));
+    });
+    $("<span>", {"class":"card-id", "text":data.id}).appendTo(card);
+
+    this.cards.push(data);
   },
   "getNextDual":function () {
       var dual = this.nextDual;
@@ -189,7 +195,29 @@ var qb = {
       });
       return dual;
   },
+
+  //card viewer
+  "viewCard": function(card_id) {
+    card = this.getCardById(card_id);
+    console.log(card);
+    $([document.documentElement, document.body]).animate({
+        scrollTop: card.div.offset().top
+    }, 200);
+    $(".search-selected").removeClass("search-selected");
+    card.div.addClass("search-selected");
+  },
+
   //search data
+  "getCardById": function(card_id) {
+    for (var i = 0; i < this.cards.length; ++i) {
+      var card = this.cards[i];
+      if (card.id === card_id ) {
+        return card;
+      }
+    }
+    console.warn("Unknown card ", card);
+    return null;
+  },
   "getPilot": function(pilot_xws, ship_xws) {
     for (var s = 0; s < this.xwingdata.pilots.length; ++s) {
       var pilot = this.xwingdata.pilots[s];

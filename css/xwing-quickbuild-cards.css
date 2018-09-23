@@ -197,7 +197,10 @@ menu input[type="checkbox"] {
   margin-right: 4px !important;
 }
 
-
+/*Search*/
+.search-selected {
+  background-color: #d8f0f3;
+}
 
 /*Factions*/
 .faction-rebelalliance {color:#f0232a;}
