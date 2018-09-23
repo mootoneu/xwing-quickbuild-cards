@@ -1,5 +1,4 @@
 [
-
   {
     "faction":"rebelalliance",
     "ship":"asf01bwing",
@@ -373,7 +372,6 @@
       }
     ]
   },
-
   {
     "faction":"rebelalliance",
     "ship":"t65xwing",
@@ -443,5 +441,459 @@
         "variant":"partisant"
       }
     ]
+  },
+
+  {
+    "faction":"galacticempire",
+    "ship":"tielnfighter",
+    "pilots":[
+      {
+        "pilot":"academypilot",
+        "threat":1,
+        "upgrades":[]
+      },
+      {
+        "pilot":"obsidiansquadronpilot",
+        "threat":1,
+        "upgrades":[]
+      },
+      {
+        "pilot":"scourgeskutu",
+        "threat":2,
+        "upgrades":["predator", "shieldupgrade"]
+      },
+      {
+        "pilot":"wampa",
+        "threat":2,
+        "upgrades":["crackshot", "hullupgrade", "stealthdevice"]
+      },
+      {
+        "pilot":"blacksquadronace",
+        "threat":2,
+        "upgrades":["crackshot", "afterburners", "shieldupgrade"]
+      },
+      {
+        "pilot":"gideonhask",
+        "threat":2,
+        "upgrades":["crackshot", "shieldupgrade"]
+      },
+      {
+        "pilot":"delmeeko",
+        "threat":2,
+        "upgrades":["juke", "stealthdevice"]
+      },
+      {
+        "pilot":"howlrunner",
+        "threat":2,
+        "upgrades":["juke", "shieldupgrade"]
+      },
+      {
+        "pilot":"seynmarana",
+        "threat":2,
+        "upgrades":["marksmanship", "afterburners"]
+      },
+      {
+        "pilot":"academypilot",
+        "threat":2,
+        "upgrades":[],
+        "title":"2x "
+      },
+      {
+        "pilot":"blacksquadronace",
+        "threat":3,
+        "upgrades":["juke", "stealthdevice"],
+        "title":"2x "
+      },
+      {
+        "pilot":"obsidiansquadronpilot",
+        "threat":3,
+        "upgrades":["outmaneuver", "shieldupgrade"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieadvancedx1",
+    "pilots":[
+      {
+        "pilot":"stormsquadronace",
+        "threat":2,
+        "upgrades":["firecontrolsystem"]
+      },
+      {
+        "pilot":"tempestsquadronpilot",
+        "threat":2,
+        "upgrades":["clustermissiles"]
+      },
+      {
+        "pilot":"maarekstele",
+        "threat":3,
+        "upgrades":["ruthless", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
+      },
+      {
+        "pilot":"vedfoslo",
+        "threat":3,
+        "upgrades":["outmaneuver", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
+      },
+      {
+        "pilot":"zertikstrom",
+        "threat":3,
+        "upgrades":["squadleader", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
+      },
+      {
+        "pilot":"darthvader",
+        "threat":4,
+        "upgrades":["supernaturalreflexes", "firecontrolsystem", "clustermissiles", "afterburners", "shieldupgrade"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"lambdaclasst4ashuttle",
+    "pilots":[
+      {
+        "pilot":"omicrongrouppilot",
+        "threat":2,
+        "upgrades":["admiralsloane", "jammingbeam"]
+      },
+      {
+        "pilot":"lieutenantsai",
+        "threat":3,
+        "upgrades":["cienaree", "gnkgonkdroid", "advancedsensors", "jammingbeam"]
+      },
+      {
+        "pilot":"captainkagi",
+        "threat":3,
+        "upgrades":["collisiondetector", "tractorbeam", "emperorpalpatine", "shieldupgrade", "staticdischargevanes"]
+      },
+      {
+        "pilot":"coloneljendon",
+        "threat":3,
+        "upgrades":["collisiondetector", "ioncannon", "darthvader", "freelanceslicer", "st321"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieagaggressor",
+    "pilots":[
+      {
+        "pilot":"onyxsquadronscout",
+        "threat":2,
+        "upgrades":["outmaneuver", "dorsalturret", "protonrockets"]
+      },
+      {
+        "pilot":"sienarspecialist",
+        "threat":2,
+        "upgrades":["ioncannonturret", "homingmissiles", "veteranturretgunner", "hullupgrade"]
+      },
+      {
+        "pilot":"lieutenantkestal",
+        "threat":2,
+        "upgrades":["elusive", "barragerockets", "shieldupgrade"]
+      },
+      {
+        "pilot":"doubleedge",
+        "threat":2,
+        "upgrades":["ioncannonturret", "concussionmissiles", "hotshotgunner"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tiephphantom",
+    "pilots":[
+      {
+        "pilot":"imdaartestpilot",
+        "threat":2,
+        "upgrades":["moffjerjerrod"]
+      },
+      {
+        "pilot":"sigmasquadronace",
+        "threat":2,
+        "upgrades":["predator", "advancedsensors", "grandinquisitor"]
+      },
+      {
+        "pilot":"echo",
+        "threat":3,
+        "upgrades":["lonewolf", "collisiondetector", "perceptivecopilot", "stealthdevice"]
+      },
+      {
+        "pilot":"whisper",
+        "threat":3,
+        "upgrades":["juke", "advancedsensors", "agentkallus", "stealthdevice"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieskstriker",
+    "pilots":[
+      {
+        "pilot":"blacksquadronscout",
+        "threat":2,
+        "upgrades":["skilledbombardier", "proximitymines", "hullupgrade"]
+      },
+      {
+        "pilot":"duchess",
+        "threat":2,
+        "upgrades":["trickshot", "shieldupgrade"]
+      },
+      {
+        "pilot":"countdown",
+        "threat":2,
+        "upgrades":["shieldupgrade"]
+      },
+      {
+        "pilot":"puresabacc",
+        "threat":2,
+        "upgrades":["stealthdevice"]
+      },
+      {
+        "pilot":"planetarysentinel",
+        "threat":3,
+        "upgrades":["connernets"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieddefender",
+    "pilots":[
+      {
+        "pilot":"onyxsquadronace",
+        "threat":3,
+        "upgrades":[]
+      },
+      {
+        "pilot":"deltasquadronpilot",
+        "threat":3,
+        "upgrades":["ioncannon"]
+      },
+      {
+        "pilot":"onyxsquadronace",
+        "threat":4,
+        "upgrades":["elusive", "advancedsensors", "protonrockets"]
+      },
+      {
+        "pilot":"countessryad",
+        "threat":4,
+        "upgrades":["outmaneuver", "afterburners"]
+      },
+      {
+        "pilot":"rexlerbrath",
+        "threat":4,
+        "upgrades":["juke", "collisiondetector", "clustermissiles"]
+      },
+      {
+        "pilot":"colonelvessery",
+        "threat":4,
+        "upgrades":["juke", "firecontrolsystem", "clustermissiles"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tiesabomber",
+    "pilots":[
+      {
+        "pilot":"gammasquadronace",
+        "threat":2,
+        "upgrades":["concussionmissiles", "skilledbombardier", "bombletgenerator", "shieldupgrade"]
+      },
+      {
+        "pilot":"tomaxbren",
+        "threat":2,
+        "upgrades":["crackshot", "protontorpedoes", "protonbombs"]
+      },
+      {
+        "pilot":"deathfire",
+        "threat":2,
+        "upgrades":["clustermissiles", "skilledbombardier", "seismiccharges", "proximitymines", "electronicbaffle"]
+      },
+      {
+        "pilot":"majorrhymer",
+        "threat":2,
+        "upgrades":["intimidation", "advprotontorpedoes", "clustermissiles"]
+      },
+      {
+        "pilot":"captainjonus",
+        "threat":2,
+        "upgrades":["protontorpedoes", "shieldupgrade"]
+      },
+      {
+        "pilot":"scimitarsquadronpilot",
+        "threat":3,
+        "upgrades":["ionmissiles", "protonbombs"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieadvancedv1",
+    "pilots":[
+      {
+        "pilot":"inquisitor",
+        "threat":2,
+        "upgrades":["instinctiveaim", "clustermissiles", "munitionsfailsafe"]
+      },
+      {
+        "pilot":"baronoftheempire",
+        "threat":2,
+        "upgrades":["crackshot", "protonrockets", "stealthdevice"]
+      },
+      {
+        "pilot":"seventhsister",
+        "threat":2,
+        "upgrades":["homingmissiles"]
+      },
+      {
+        "pilot":"grandinquisitor",
+        "threat":3,
+        "upgrades":["supernaturalreflexes", "concussionmissiles"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tieinterceptor",
+    "pilots":[
+      {
+        "pilot":"sabersquadronace",
+        "threat":2,
+        "upgrades":["predator", "stealthdevice"]
+      },
+      {
+        "pilot":"turrphennir",
+        "threat":2,
+        "upgrades":["daredevil", "electronicbaffle"]
+      },
+      {
+        "pilot":"soontirfel",
+        "threat":3,
+        "upgrades":["outmaneuver", "afterburners", "stealthdevice"]
+      },
+      {
+        "pilot":"alphasquadronpilot",
+        "threat":3,
+        "upgrades":["ablativeplating"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"alphaclassstarwing",
+    "pilots":[
+      {
+        "pilot":"nusquadronpilot",
+        "threat":2,
+        "upgrades":["firecontrolsystem", "protontorpedoes", "advancedslam", "os1arsenalloadout"]
+      },
+      {
+        "pilot":"rhosquadronpilot",
+        "threat":2,
+        "upgrades":["firecontrolsystem", "ioncannon", "homingmissiles", "advancedslam", "xg1assaultconfiguration"]
+      },
+      {
+        "pilot":"lieutenantkarsabi",
+        "threat":2,
+        "upgrades":["outmaneuver", "heavylasercannon", "advancedslam", "xg1assaultconfiguration"]
+      },
+      {
+        "pilot":"majorvynder",
+        "threat":2,
+        "upgrades":["saturationsalvo", "barragerockets", "advancedslam", "os1arsenalloadout"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tiecapunisher",
+    "pilots":[
+      {
+        "pilot":"cutlasssquadronpilot",
+        "threat":2,
+        "upgrades":["trajectorysimulator", "ionmissiles", "skilledbombardier", "protonbombs"]
+      },
+      {
+        "pilot":"cutlasssquadronpilot",
+        "threat":2,
+        "upgrades":["advancedsensors", "protonrockets", "connernets"]
+      },
+      {
+        "pilot":"deathrain",
+        "threat":2,
+        "upgrades":["trajectorysimulator", "homingmissiles", "bombletgenerator", "ablativeplating"]
+      },
+      {
+        "pilot":"redline",
+        "threat":2,
+        "upgrades":["debrisgambit", "clustermissiles"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"vt49decimator",
+    "pilots":[
+      {
+        "pilot":"patrolleader",
+        "threat":4,
+        "upgrades":["informant", "seventhsister", "fifthbrother"]
+      },
+      {
+        "pilot":"captainoicunn",
+        "threat":4,
+        "upgrades":["intimidation", "grandmofftarkin", "dauntless"]
+      },
+      {
+        "pilot":"rearadmiralchiraneau",
+        "threat":4,
+        "upgrades":["swarmtactics", "ministertua", "tacticalofficer"]
+      }
+    ]
+  },
+  {
+    "faction":"galacticempire",
+    "ship":"tiereaper",
+    "pilots":[
+      {
+        "pilot":"scarifbasepilot",
+        "threat":2,
+        "upgrades":["deathtroopers", "shieldupgrade"]
+      },
+      {
+        "pilot":"vizier",
+        "threat":2,
+        "upgrades":["directorkrennic"]
+      },
+      {
+        "pilot":"majorvermeil",
+        "threat":2,
+        "upgrades":["swarmtactics", "tacticaloffcer"]
+      },
+      {
+        "pilot":"captainferoph",
+        "threat":2,
+        "upgrades":["swarmtactics", "isbslicer"]
+      }
+    ]
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
