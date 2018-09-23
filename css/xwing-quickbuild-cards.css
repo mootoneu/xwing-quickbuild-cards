@@ -110,17 +110,13 @@ i.ship
 /*Card id*/
 .card-id {
   position:absolute;
-  bottom: 6.5mm;
-  right: -1mm;
+  bottom: -0.2mm;
+  right: 0;
   width: 5mm;
-  font-size: 8pt;
+  font-size: 6pt;
   color: lightgray;
-
-  transform:rotate(-90deg);
-  -moz-transform:rotate(-90deg);
-  -ms-transform:rotate(-90deg);
-  -o-transform:rotate(-90deg);
-  -webkit-transform:rotate(-90deg);
+  text-align: center;
+  display: inline-block;
 }
 
 /*Faction icon*/
@@ -128,8 +124,8 @@ i.ship
   font-family: XWing;
   font-style: normal;
   position:absolute;
-  bottom: 1mm;
-  right: 1mm;
+  bottom: 2mm;
+  right: 0.5mm;
 }
 .faction-icon.faction-galacticempire:before {content: "y";}
 .faction-icon.faction-rebelalliance:before {content: "x";}
@@ -147,7 +143,7 @@ i.ship
   padding:0;
   position:relative;
   text-align:center;
-  top:20mm;
+  top:19mm;
   width:25mm;
 
   transform:rotate(-90deg);
