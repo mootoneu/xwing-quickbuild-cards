@@ -30,6 +30,11 @@
     "ship":"arc170starfighter",
     "pilots":[
       {
+        "pilot":"ibtisam",
+        "threat":2,
+        "upgrades":["elusive"]
+      },
+      {
         "pilot":"norrawexley",
         "threat":3,
         "upgrades":["experthandling", "seasonednavigator", "veterantailgunner", "r3astromech", "ablativeplating", "hullupgrade"]
@@ -43,6 +48,43 @@
         "pilot":"sharabey",
         "threat":3,
         "upgrades":["experthandling", "protontorpedoes", "perceptivecopilot", "r3astromech"]
+      }
+    ]
+  },
+  {
+    "faction":"rebelalliance",
+    "ship":"attackshuttle",
+    "pilots":[
+      {
+        "pilot":"herasyndulla",
+        "threat":2,
+        "upgrades":["elusive", "ioncannonturret", "phantom"]
+      },
+      {
+        "pilot":"sabinewren",
+        "threat":2,
+        "upgrades":["outmaneuver", "dorsalturret", "phantom"]
+      }
+    ]
+  },
+  {
+    "faction":"rebelalliance",
+    "ship":"auzituckgunship",
+    "pilots":[
+      {
+        "pilot":"kashyyykdefender",
+        "threat":2,
+        "upgrades":["novicetechnician"]
+      },
+      {
+        "pilot":"lowhhrick",
+        "threat":2,
+        "upgrades":[]
+      },
+      {
+        "pilot":"wullffwarro",
+        "threat":3,
+        "upgrades":["selfless", "gnkgonkdroid", "novicetechnician", "hullupgrade"]
       }
     ]
   },
@@ -103,14 +145,82 @@
         "upgrades":["trajectorysimulator", "ionmissiles", "perceptivecopilot", "connernets", "protonbombs", "advancedslam"]
       }
     ]
-  },  {
+  },
+  {
+    "faction":"rebelalliance",
+    "ship":"ewing",
+    "pilots":[
+      {
+        "pilot":"knavesquadronescort",
+        "threat":2,
+        "upgrades":[]
+      },
+      {
+        "pilot":"roguesquadronescort",
+        "threat":3,
+        "upgrades":["predator", "collisiondetector", "protontorpedoes", "r3astromech"]
+      },
+      {
+        "pilot":"gavindarklighter",
+        "threat":3,
+        "upgrades":["crackshot", "firecontrolsystem", "iontorpedoes", "r4astromech"]
+      },
+      {
+        "pilot":"corranhorn",
+        "threat":4,
+        "upgrades":["outmaneuver", "firecontrolsystem", "protontorpedoes", "r2astromech", "afterburners"]
+      }
+    ]
+  },
+  {
     "faction":"rebelalliance",
     "ship":"hwk290lightfreighter",
     "pilots":[
       {
+        "pilot":"roarkgarnet",
+        "threat":2,
+        "upgrades":["daredevil", "seismiccharges", "hullupgrade", "shieldupgrade"]
+      },
+      {
         "pilot":"rebelscout",
         "threat":2,
         "upgrades":["sabinewren", "protonbombs", "seismiccharges", "engineupgrade"]
+      },
+      {
+        "pilot":"kylekatarn",
+        "threat":2,
+        "upgrades":["moldycrow"]
+      },
+      {
+        "pilot":"janors",
+        "threat":3,
+        "upgrades":["trickshot", "perceptivecopilot", "seismiccharges", "cloakingdevice", "engineupgrade", "moldycrow"]
+      }
+    ]
+  },
+  {
+    "faction":"rebelalliance",
+    "ship":"modifiedyt1300lightfreighter",
+    "pilots":[
+      {
+        "pilot":"outerrimsmuggler",
+        "threat":4,
+        "upgrades":["homingmissiles", "novicetechnician", "veteranturretgunner", "feedbackarray", "staticdischargevanes"]
+      },
+      {
+        "pilot":"landocalrissian-modifiedyt1300lightfreighter",
+        "threat":5,
+        "upgrades":["swarmtactics", "concussionmissiles", "niennunb", "engineupgrade", "millenniumfalcon"]
+      },
+      {
+        "pilot":"hansolo-modifiedyt1300lightfreighter",
+        "threat":5,
+        "upgrades":["lonewolf", "chewbacca", "millenniumfalcon"]
+      },
+      {
+        "pilot":"chewbacca",
+        "threat":6,
+        "upgrades":["predator", "c3po", "leiaorgana", "r2d2", "hansolo", "lukeskywalker", "engineupgrade", "millenniumfalcon"]
       }
     ]
   },
@@ -159,6 +269,76 @@
   },
   {
     "faction":"rebelalliance",
+    "ship":"t65xwing",
+    "pilots":[
+      {
+        "pilot":"biggsdarklighter",
+        "threat":2,
+        "upgrades":["selfless", "servomotorsfoils"]
+      },
+      {
+        "pilot":"bluesquadronescort",
+        "threat":2,
+        "upgrades":["protontorpedoes", "r3astromech", "servomotorsfoils"]
+      },
+      {
+        "pilot":"garvendreis-t65xwing",
+        "threat":2,
+        "upgrades":["servomotorsfoils"]
+      },
+      {
+        "pilot":"redsquadronveteran",
+        "threat":2,
+        "upgrades":["predator", "r5astromech", "servomotorsfoils"]
+      },
+      {
+        "pilot":"cavernangelszealot",
+        "threat":2,
+        "upgrades":["r2astromech", "deadmansswitch", "servomotorsfoils"],
+        "variant":"partisant"
+      },
+      {
+        "pilot":"edriotwotubes",
+        "threat":2,
+        "upgrades":["trickshot", "r4astromech", "deadmansswitch", "servomotorsfoils"],
+        "variant":"partisant"
+      },
+      {
+        "pilot":"leevantenza",
+        "threat":2,
+        "upgrades":["elusive", "r2astromech", "deadmansswitch", "afterburners", "shieldupgrade", "servomotorsfoils"],
+        "variant":"partisant"
+      },
+      {
+        "pilot":"jekporkins",
+        "threat":3,
+        "upgrades":["outmaneuver", "r5d8", "hullupgrade", "afterburners", "servomotorsfoils"]
+      },
+      {
+        "pilot":"lukeskywalker",
+        "threat":3,
+        "upgrades":["protontorpedoes", "r2d2", "instinctiveaim", "servomotorsfoils"]
+      },
+      {
+        "pilot":"thanekyrell",
+        "threat":3,
+        "upgrades":["elusive", "iontorpedoes", "r2astromech", "afterburners", "hullupgrade", "servomotorsfoils"]
+      },
+      {
+        "pilot":"wedgeantilles",
+        "threat":3,
+        "upgrades":["outmaneuver", "protontorpedoes", "r4astromech", "shieldupgrade", "servomotorsfoils"]
+      },
+      {
+        "pilot":"kullbeesperado",
+        "threat":3,
+        "upgrades":["outmaneuver", "r2astromech", "deadmansswitch", "afterburners", "hullupgrade", "servomotorsfoils"],
+        "variant":"partisant"
+      }
+    ]
+  },
+  {
+    "faction":"rebelalliance",
     "ship":"tielnfighter",
     "pilots":[
       {
@@ -169,7 +349,7 @@
       {
         "pilot":"ezrabridger-tielnfighter",
         "threat":2,
-        "upgrades":["heightenedperception", "chopper", "afterburners", "phantom"]
+        "upgrades":["supernaturalreflexes", "zeborrelios", "hullupgrade"]
       },
       {
         "pilot":"captainrex",
@@ -218,7 +398,7 @@
       {
         "pilot":"cassianandor",
         "threat":3,
-        "upgrades":["firecontrolsystem", "jynerso", "bazemalbus"]
+        "upgrades":["firecontrolsystem", "jynerso", "bazemalbus", "pivotwing"]
       },
       {
         "pilot":"hefftobber",
@@ -230,95 +410,6 @@
         "threat":3,
         "upgrades":["elusive", "sawgerrera", "advancedsensors", "shieldupgrade", "pivotwing"],
         "variant":"partisant"
-      }
-    ]
-  },
-  {
-    "faction":"rebelalliance",
-    "ship":"modifiedyt1300lightfreighter",
-    "pilots":[
-      {
-        "pilot":"outerrimsmuggler",
-        "threat":4,
-        "upgrades":["homingmissiles", "novicetechnician", "veteranturretgunner", "feedbackarray", "staticdischargevanes"]
-      },
-      {
-        "pilot":"landocalrissian-modifiedyt1300lightfreighter",
-        "threat":5,
-        "upgrades":["swarmtactics", "concussionmissiles", "niennunb", "engineupgrade", "millenniumfalcon"]
-      },
-      {
-        "pilot":"hansolo-modifiedyt1300lightfreighter",
-        "threat":5,
-        "upgrades":["lonewolf", "chewbacca", "millenniumfalcon"]
-      },
-      {
-        "pilot":"chewbacca",
-        "threat":6,
-        "upgrades":["predator", "c3po", "leiaorgana", "r2d2", "hansolo", "lukeskywalker", "engineupgrade", "millenniumfalcon"]
-      }
-    ]
-  },
-  {
-    "faction":"rebelalliance",
-    "ship":"z95af4headhunter",
-    "pilots":[
-      {
-        "pilot":"banditsquadronpilot",
-        "threat":1,
-        "upgrades":[]
-      },
-      {
-        "pilot":"talasquadronpilot",
-        "threat":1,
-        "upgrades":["selfless"]
-      },
-      {
-        "pilot":"airencracken",
-        "threat":2,
-        "upgrades":["swarmtactics", "clustermissiles", "hullupgrade"]
-      },
-      {
-        "pilot":"lieutenantblount",
-        "threat":2,
-        "upgrades":["outmaneuver", "protonrockets", "shieldupgrade"]
-      }
-    ]
-  },
-  {
-    "faction":"rebelalliance",
-    "ship":"attackshuttle",
-    "pilots":[
-      {
-        "pilot":"herasyndulla",
-        "threat":2,
-        "upgrades":["elusive", "ioncannonturret", "phantom"]
-      },
-      {
-        "pilot":"sabinewren",
-        "threat":2,
-        "upgrades":["outmaneuver", "dorsalturret", "phantom"]
-      }
-    ]
-  },
-  {
-    "faction":"rebelalliance",
-    "ship":"yt2400lightfreighter",
-    "pilots":[
-      {
-        "pilot":"wildspacefringer",
-        "threat":4,
-        "upgrades":["concussionmissiles", "veteranturretgunner", "contrabandcybernetics"]
-      },
-      {
-        "pilot":"leebo",
-        "threat":4,
-        "upgrades":["outrider", "inertialdampeners"]
-      },
-      {
-        "pilot":"dashrendar",
-        "threat":5,
-        "upgrades":["experthandling", "trickshot", "perceptivecopilot", "riggedcargochute", "outrider"]
       }
     ]
   },
@@ -374,74 +465,54 @@
   },
   {
     "faction":"rebelalliance",
-    "ship":"t65xwing",
+    "ship":"yt2400lightfreighter",
     "pilots":[
       {
-        "pilot":"biggsdarklighter",
-        "threat":2,
-        "upgrades":["selfless", "servomotorsfoils"]
+        "pilot":"wildspacefringer",
+        "threat":4,
+        "upgrades":["concussionmissiles", "veteranturretgunner", "contrabandcybernetics"]
       },
       {
-        "pilot":"bluesquadronescort",
-        "threat":2,
-        "upgrades":["protontorpedoes", "servomotorsfoils", "r3astromech"]
+        "pilot":"leebo",
+        "threat":4,
+        "upgrades":["outrider", "inertialdampeners"]
       },
       {
-        "pilot":"garvendreis-t65xwing",
-        "threat":2,
-        "upgrades":["servomotorsfoils"]
-      },
-      {
-        "pilot":"redsquadronveteran",
-        "threat":2,
-        "upgrades":["predator", "servomotorsfoils", "r5astromech"]
-      },
-      {
-        "pilot":"cavernangelszealot",
-        "threat":2,
-        "upgrades":["r2astromech", "deadmansswitch", "servomotorsfoils"],
-        "variant":"partisant"
-      },
-      {
-        "pilot":"edriotwotubes",
-        "threat":2,
-        "upgrades":["trickshot", "r4astromech", "deadmansswitch", "servomotorsfoils"],
-        "variant":"partisant"
-      },
-      {
-        "pilot":"leevantenza",
-        "threat":2,
-        "upgrades":["elusive", "r2astromech", "deadmansswitch", "afterburners", "shieldupgrade", "servomotorsfoils"],
-        "variant":"partisant"
-      },
-      {
-        "pilot":"jekporkins",
-        "threat":3,
-        "upgrades":["outmaneuver", "servomotorsfoils", "r5d8", "hullupgrade", "afterburners"]
-      },
-      {
-        "pilot":"lukeskywalker",
-        "threat":3,
-        "upgrades":["protontorpedoes", "servomotorsfoils", "r2d2", "instinctiveaim"]
-      },
-      {
-        "pilot":"thanekyrell",
-        "threat":3,
-        "upgrades":["elusive", "servomotorsfoils","r2astromech","hullupgrade","iontorpedoes", "afterburners"]
-      },
-      {
-        "pilot":"wedgeantilles",
-        "threat":3,
-        "upgrades":["outmaneuver", "servomotorsfoils", "r4astromech", "shieldupgrade", "protontorpedoes"]
-      },
-      {
-        "pilot":"kullbeesperado",
-        "threat":3,
-        "upgrades":["outmaneuver", "r2astromech", "deadmansswitch", "afterburners", "hullupgrade", "servomotorsfoils"],
-        "variant":"partisant"
+        "pilot":"dashrendar",
+        "threat":5,
+        "upgrades":["experthandling", "trickshot", "perceptivecopilot", "riggedcargochute", "outrider"]
       }
     ]
   },
+  {
+    "faction":"rebelalliance",
+    "ship":"z95af4headhunter",
+    "pilots":[
+      {
+        "pilot":"banditsquadronpilot",
+        "threat":1,
+        "upgrades":[]
+      },
+      {
+        "pilot":"talasquadronpilot",
+        "threat":1,
+        "upgrades":["selfless"]
+      },
+      {
+        "pilot":"airencracken",
+        "threat":2,
+        "upgrades":["swarmtactics", "clustermissiles", "hullupgrade"]
+      },
+      {
+        "pilot":"lieutenantblount",
+        "threat":2,
+        "upgrades":["outmaneuver", "protonrockets", "shieldupgrade"]
+      }
+    ]
+  },
+
+
+
 
   {
     "faction":"galacticempire",
@@ -874,7 +945,7 @@
       {
         "pilot":"majorvermeil",
         "threat":2,
-        "upgrades":["swarmtactics", "tacticaloffcer"]
+        "upgrades":["swarmtactics", "tacticalofficer"]
       },
       {
         "pilot":"captainferoph",
@@ -882,7 +953,488 @@
         "upgrades":["swarmtactics", "isbslicer"]
       }
     ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"firesprayclasspatrolcraft",
+    "pilots":[
+      {
+        "pilot":"bountyhunter",
+        "threat":3,
+        "upgrades":["perceptivecopilot", "inertialdampeners", "seismiccharges"]
+      },
+      {
+        "pilot":"kathscarlet",
+        "threat":3,
+        "upgrades":["marauder"]
+      },
+      {
+        "pilot":"krassistrelix",
+        "threat":3,
+        "upgrades":["concussionmissiles"]
+      },
+      {
+        "pilot":"koshkafrost",
+        "threat":3,
+        "upgrades":["perceptivecopilot"]
+      },
+      {
+        "pilot":"bobafett",
+        "threat":4,
+        "upgrades":["lonewolf", "perceptivecopilot", "inertialdampeners", "seismiccharges", "slavei"]
+      },
+      {
+        "pilot":"emonazzameen",
+        "threat":3,
+        "upgrades":["elusive", "perceptivecopilot", "inertialdampeners", "proximitymines", "seismiccharges", "andrasta"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"fangfighter",
+    "pilots":[
+      {
+        "pilot":"zealousrecruit",
+        "threat":2,
+        "upgrades":["protontorpedoes"]
+      },
+      {
+        "pilot":"skullsquadronpilot",
+        "threat":2,
+        "upgrades":["fearless"]
+      },
+      {
+        "pilot":"oldteroch",
+        "threat":2,
+        "upgrades":[]
+      },
+      {
+        "pilot":"kadsolus",
+        "threat":2,
+        "upgrades":["fearless"]
+      },
+      {
+        "pilot":"joyrekkoff",
+        "threat":3,
+        "upgrades":["predator", "iontorpedoes", "afterburners", "hullupgrade"]
+      },
+      {
+        "pilot":"fennrau",
+        "threat":3,
+        "upgrades":["daredevil", "afterburners", "hullupgrade"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"lancerclasspursuitcraft",
+    "pilots":[
+      {
+        "pilot":"shadowporthunter",
+        "threat":3,
+        "upgrades":["maul", "contrabandcybernetics"]
+      },
+      {
+        "pilot":"sabinewren-lancerclasspursuitcraft",
+        "threat":3,
+        "upgrades":["fearless", "ketsuonyo", "shadowcaster"]
+      },
+      {
+        "pilot":"ketsuonyo",
+        "threat":4,
+        "upgrades":["outmaneuver", "riggedcargochute", "shieldupgrade", "shadowcaster"]
+      },
+      {
+        "pilot":"asajjventress",
+        "threat":4,
+        "upgrades":["sense", "veteranturretgunner", "deadmansswitch", "inertialdampeners"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"kihraxzfighter",
+    "pilots":[
+      {
+        "pilot":"cartelmarauder",
+        "threat":2,
+        "upgrades":["concussionmissiles", "hullupgrade", "munitionsfailsafe"]
+      },
+      {
+        "pilot":"blacksunace",
+        "threat":2,
+        "upgrades":["predator", "shieldupgrade"]
+      },
+      {
+        "pilot":"captainjostero",
+        "threat":2,
+        "upgrades":["ionmissiles", "munitionsfailsafe"]
+      },
+      {
+        "pilot":"talonbanecobra",
+        "threat":3,
+        "upgrades":["outmaneuver", "clustermissiles", "inertialdampeners", "afterburners", "electronicbaffle", "shieldupgrade"]
+      },
+      {
+        "pilot":"viktorhel",
+        "threat":3,
+        "upgrades":["crackshot", "stealthdevice"]
+      },
+      {
+        "pilot":"graz",
+        "threat":3,
+        "upgrades":["outmaneuver", "concussionmissiles", "contrabandcybernetics", "afterburners"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"btla4ywing",
+    "pilots":[
+      {
+        "pilot":"hiredgun",
+        "threat":2,
+        "upgrades":["crackshot", "ioncannonturret", "veteranturretgunner", "r3astromech", "connernets"]
+      },
+      {
+        "pilot":"crymorahgoon",
+        "threat":2,
+        "upgrades":["dorsalturret", "iontorpedoes", "r3astromech", "inertialdampeners", "proximitymines"]
+      },
+      {
+        "pilot":"drearenthal",
+        "threat":2,
+        "upgrades":["experthandling", "ioncannonturret", "hotshotgunner"]
+      },
+      {
+        "pilot":"kavil",
+        "threat":2,
+        "upgrades":["experthandling", "dorsalturret", "genius", "protonbombs", "afterburners"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"hwk290lightfreighter",
+    "pilots":[
+      {
+        "pilot":"dacebonearm",
+        "threat":2,
+        "upgrades":["feedbackarray", "connernets", "staticdischargevanes"]
+      },
+      {
+        "pilot":"palobgodalhi",
+        "threat":2,
+        "upgrades":["debrisgambit", "juke", "contrabandcybernetics", "stealthdevice"]
+      },
+      {
+        "pilot":"torkilmux",
+        "threat":2,
+        "upgrades":["cloakingdevice", "proximitymines"]
+      },
+      {
+        "pilot":"spicerunner",
+        "threat":3,
+        "upgrades":["deadmansswitch", "protonbombs", "electronicbaffle"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"quadrijettransferspacetug",
+    "pilots":[
+      {
+        "pilot":"jakkugunrunner",
+        "threat":2,
+        "upgrades":["novicetechnician", "proximitymines", "electronicbaffle"],
+        "title":"2x "
+      },
+      {
+        "pilot":"constablezuvio",
+        "threat":2,
+        "upgrades":["outmaneuver", "riggedcargochute", "connernets", "shieldupgrade"]
+        },
+      {
+        "pilot":"sarcoplank",
+        "threat":3,
+        "upgrades":["unkarplutt", "feedbackarray", "seismiccharges", "hullupgrade", "shieldupgrade"]
+      },
+      {
+        "pilot":"unkarplutt",
+        "threat":3,
+        "upgrades":["novicetechnician", "contrabandcybernetics", "proximitymines", "afterburners"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"starviperclassattackplatform",
+    "pilots":[
+      {
+        "pilot":"blacksunenforcer",
+        "threat":2,
+        "upgrades":["collisiondetector"]
+      },
+      {
+        "pilot":"blacksunassassin",
+        "threat":3,
+        "upgrades":["fearless"]
+      },
+      {
+        "pilot":"princexizor",
+        "threat":3,
+        "upgrades":["predator", "firecontrolsystem", "shieldupgrade", "virago"]
+      },
+      {
+        "pilot":"guri",
+        "threat":3,
+        "upgrades":["daredevil", "advancedsensors", "advprotontorpedoes"]
+      },
+      {
+        "pilot":"dalanoberos-starviperclassattackplatform",
+        "threat":3,
+        "upgrades":["outmaneuver", "firecontrolsystem", "protontorpedoes", "contrabandcybernetics"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"m3ainterceptor",
+    "pilots":[
+      {
+        "pilot":"serissu",
+        "threat":2,
+        "upgrades":["stealthdevice"]
+      },
+      {
+        "pilot":"genesisred",
+        "threat":2,
+        "upgrades":["juke", "concussionmissiles", "munitionsfailsafe"]
+      },
+      {
+        "pilot":"quinnjast",
+        "threat":2,
+        "upgrades":["crackshot", "advprotontorpedoes", "afterburners"]
+      },
+      {
+        "pilot":"laetinashera",
+        "threat":2,
+        "upgrades":["juke", "clustermissiles", "munitionsfailsafe", "stealthdevice"]
+      },
+      {
+        "pilot":"inaldra",
+        "threat":2,
+        "upgrades":["ioncannon", "hullupgrade", "shieldupgrade"]
+      },
+      {
+        "pilot":"sunnybounder",
+        "threat":2,
+        "upgrades":["predator", "clustermissiles", "afterburners"]
+      },
+      {
+        "pilot":"cartelspacer",
+        "threat":3,
+        "upgrades":["iontorpedoes", "munitionsfailsafe"],
+        "title":"2x "
+      },
+      {
+        "pilot":"tansariipointveteran" ,
+        "threat":3,
+        "upgrades":["crackshot", "heavylasercannon"],
+        "title":"2x "
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"jumpmaster5000",
+    "pilots":[
+      {
+        "pilot":"contractedscout",
+        "threat":2,
+        "upgrades":["iontorpedoes", "inertialdampeners"]
+      },
+      {
+        "pilot":"teltrevura",
+        "threat":3,
+        "upgrades":["experthandling", "gnkgonkdroid", "protontorpedoes", "deadmansswitch"]
+      },
+      {
+        "pilot":"dengar",
+        "threat":3,
+        "upgrades":["experthandling", "protontorpedoes", "r4astromech", "contrabandcybernetics", "punishingone"]
+      },
+      {
+        "pilot":"manaroo",
+        "threat":3,
+        "upgrades":["intimidation", "perceptivecopilot", "protontorpedoes", "feedbackarray", "staticdischargevanes"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"z95af4headhunter",
+    "pilots":[
+      {
+        "pilot":"binayrepirate",
+        "threat":1,
+        "upgrades":[]
+      },
+      {
+        "pilot":"ndrusuhlak",
+        "threat":2,
+        "upgrades":["lonewolf", "homingmissiles", "cloakingdevice", "hullupgrade"]
+      },
+      {
+        "pilot":"blacksunsoldier",
+        "threat":2,
+        "upgrades":["experthandling", "concussionmissiles", "deadmansswitch", "hullupgrade"],
+        "title":"2x "
+      },
+      {
+        "pilot":"kaatoleeachos",
+        "threat":3,
+        "upgrades":["experthandling", "clustermissiles", "contrabandcybernetics", "afterburners"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"g1astarfighter",
+    "pilots":[
+      {
+        "pilot":"gandfindsman",
+        "threat":2,
+        "upgrades":["firecontrolsystem", "freelanceslicer", "deadmansswitch", "electronicbaffle"]
+      },
+      {
+        "pilot":"zuckuss",
+        "threat":2,
+        "upgrades":["juke", "tractorbeam", "4lom", "misthunter"]
+      },
+      {
+        "pilot":"4lom",
+        "threat":3,
+        "upgrades":["elusive", "advancedsensors", "000", "zuckuss", "bt1", "misthunter"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"yv666lightfreighter",
+    "pilots":[
+      {
+        "pilot":"trandoshanslaver",
+        "threat":3,
+        "upgrades":["hotshotgunner", "jabbathehutt", "contrabandcybernetics", "riggedcargochute"]
+      },
+      {
+        "pilot":"lattsrazzi",
+        "threat":3,
+        "upgrades":["bobafett", "bossk", "dengar", "feedbackarray", "staticdischargevanes"]
+      },
+      {
+        "pilot":"bossk",
+        "threat":3,
+        "upgrades":["marksmanship", "greedo", "houndstooth"],
+        "docked":{
+          "ship":"z95af4headhunter",
+          "pilot":"nashtahpup",
+          "threat":3,
+          "upgrades":[]
+        }
+      },
+      {
+        "pilot":"trandoshanslaver",
+        "threat":3,
+        "upgrades":["deadmansswitch", "houndstooth"],
+        "docked":{
+          "ship":"z95af4headhunter",
+          "pilot":"nashtahpup",
+          "threat":3,
+          "upgrades":["protonrockets"]
+        }
+      },
+      {
+        "pilot":"moraloeval",
+        "threat":4,
+        "upgrades":["outmaneuver", "clustermissiles", "lattsrazzi", "dengar", "contrabandcybernetics"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"m12lkimogilafighter",
+    "pilots":[
+      {
+        "pilot":"cartelexecutioner",
+        "threat":2,
+        "upgrades":["crackshot", "r5p8", "contrabandcybernetics"]
+      },
+      {
+        "pilot":"dalanoberos",
+        "threat":2,
+        "upgrades":["experthandling", "r5tk", "inertialdampeners"]
+      },
+      {
+        "pilot":"toranikulda",
+        "threat":3,
+        "upgrades":["saturationsalvo", "protontorpedoes", "clustermissiles", "r4astromech", "inertialdampeners", "shieldupgrade"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"scurrgh6bomber",
+    "pilots":[
+      {
+        "pilot":"lokrevenant",
+        "threat":2,
+        "upgrades":["dorsalturret", "bombletgenerator"]
+      },
+      {
+        "pilot":"solsixxa",
+        "threat":3,
+        "upgrades":["ioncannonturret", "skilledbombardier", "connernets", "proximitymines"]
+      },
+      {
+        "pilot":"captainnym",
+        "threat":3,
+        "upgrades":["squadleader", "trajectorysimulator", "r4astromech", "bombletgenerator", "havoc"]
+      }
+    ]
+  },
+  {
+    "faction":"scumandvillainy",
+    "ship":"aggressorassaultfighter",
+    "pilots":[
+      {
+        "pilot":"ig88a",
+        "threat":6,
+        "upgrades":["advancedsensors", "ig2000"],
+        "docked":{
+          "ship":"aggressorassaultfighter",
+          "pilot":"ig88d",
+          "threat":3,
+          "upgrades":["advancedsensors", "ig2000"]
+        }
+      },
+      {
+        "pilot":"ig88b",
+        "threat":6,
+        "upgrades":["firecontrolsystem", "ioncannon", "ig2000"],
+        "docked":{
+          "ship":"aggressorassaultfighter",
+          "pilot":"ig88c",
+          "threat":3,
+          "upgrades":["firecontrolsystem", "ioncannon", "ig2000"]
+        }
+      }
+    ]
   }
+
 
 
 
