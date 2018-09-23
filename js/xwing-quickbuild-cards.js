@@ -118,8 +118,9 @@ var qb = {
     //Pilot name + limited
     var limited = pilot.limited == 1 ?" limited":"";
     var variant = (qb.hasOwnProperty("variant")?" variant-"+qb.variant:"");
+    var force = (pilot.hasOwnProperty("force")?" forcepower forcepower-"+pilot.force:"");
     var title_text = (qb.hasOwnProperty("title")?qb.title:"") + pilot.name;
-    var title = $("<div>", {"class":"name faction-"+pilot.faction_xws+limited+variant, "text":title_text}).appendTo(card);
+    var title = $("<div>", {"class":"name faction-"+pilot.faction_xws+limited+variant+force, "text":title_text}).appendTo(card);
 
     //update cost
     cost += pilot.cost;
@@ -128,9 +129,15 @@ var qb = {
     var upgrades = [];
     for (var qb_upg of qb.upgrades) {
       var upgrade = this.getUpgrade(qb_upg);
-      if (upgrade != null)
-      cost += this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
-      upgrades.push(upgrade);
+      if (upgrade != null){
+        cost += this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
+        upgrades.push(upgrade);
+      }
+    }
+
+    //double ship
+    if (qb.hasOwnProperty("title") && qb.title == "2x ") {
+      cost = cost * 2;
     }
 
     //Threat + Cost
@@ -144,7 +151,12 @@ var qb = {
       if (upgrade == null) {
         $("<li>", {"class":"upgrade threat-4", "text":"ERROR"}).appendTo(ul);
       } else {
-        $("<li>", {"class":"upgrade upgrade-"+upgrade.type, "text":upgrade.name}).appendTo(ul);
+        var limited = upgrade.limited == 1 ?" limited":"";
+        console.log(limited, upgrade)
+        var force = (upgrade.sides[0].hasOwnProperty("force")?" forcepower forcepower-"+upgrade.sides[0].force:"");
+        var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type});
+        var span = $("<span>", {"class":"upgrade-name"+limited+force, "text":upgrade.name}).appendTo(li);
+        li.appendTo(ul);
       }
     }
     ul.appendTo(card);

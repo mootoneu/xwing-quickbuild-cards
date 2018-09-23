@@ -81,7 +81,7 @@ i.ship
   width:43mm;
 }
 
-.name.limited::before
+.limited::before
 {
   content:"•";
 }
@@ -135,6 +135,15 @@ i.ship
   padding-right:5px;
 }
 
+/*Forcepower*/
+.forcepower::after {
+  color:#b17ac1;
+  content: " F";
+  font-family: XWing;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: 40;
+}
 /*Variants*/
 .variant-partisant::after {
   color:black;
@@ -198,4 +207,4 @@ menu input[type="checkbox"] {
 .upgrade-title::before {content: "t "; font-family: XWing; font-style: normal;}
 .upgrade-torpedo::before {content: "P "; font-family: XWing; font-style: normal;}
 .upgrade-turret::before {content: "U "; font-family: XWing; font-style: normal;}
-.upgrade-forcepower::before {content: "F "; font-family: XWing; font-style: normal;}
+.upgrade-forcepower::before {content: "F "; font-family: XWing; font-style: normal;color:#b17ac1;}
