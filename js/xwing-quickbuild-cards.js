@@ -92,6 +92,7 @@ var qb = {
   },
 
   //Build cards
+  "nextCardId":0,
   "nextDual":"A",
   "dualCards":[],
   "buildCards":function() {
@@ -152,7 +153,6 @@ var qb = {
         $("<li>", {"class":"upgrade threat-4", "text":"ERROR"}).appendTo(ul);
       } else {
         var limited = upgrade.limited == 1 ?" limited":"";
-        console.log(limited, upgrade)
         var force = (upgrade.sides[0].hasOwnProperty("force")?" forcepower forcepower-"+upgrade.sides[0].force:"");
         var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type});
         var span = $("<span>", {"class":"upgrade-name"+limited+force, "text":upgrade.name}).appendTo(li);
@@ -171,6 +171,8 @@ var qb = {
     if (dual != null) {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
+    $("<i>", {"class":"faction-icon faction-"+pilot.faction_xws}).appendTo(card);
+    $("<span>", {"class":"card-id", "text":++this.nextCardId}).appendTo(card);
 
     this.cards.push({"div":card, "pilot":pilot, "qb":qb});
   },

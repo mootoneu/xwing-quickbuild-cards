@@ -49,7 +49,6 @@ var menu = {
     }
     qb.updateSelectedCards("#cards-container", this.filters);
     localStorage.filters = this.filters;
-    console.log(filter, this.filters);
   },
   "initFilters":function (f) {
     if (f === undefined || f.length == 0) return;
