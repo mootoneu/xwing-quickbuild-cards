@@ -3,9 +3,10 @@
 A simple tool to print quickbuild cards for X-Wing the miniature game 2.0
 
 ## How to print
-1. Select the ships you want on the left side bar (clicking on a faction title will hide/show its ships)
-2. Reload the page
-3. Print it
+1. Go to [xwing-quickbuild-cards.html](https://mootoneu.github.io/xwing-quickbuild-cards/xwing-quickbuild-cards.html)
+2. Select the ships you want on the left side bar (clicking on a faction title will hide/show its ships)
+3. Reload the page
+4. Print it
 
 ## What's on the card
 - On the top row from left to right:
