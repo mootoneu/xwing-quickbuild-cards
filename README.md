@@ -3,6 +3,14 @@
 A simple tool to print quickbuild cards for X-Wing the miniature game 2.0
 
 ## How to print
+1. Download one of the ready-to-print pdfs in the [dist](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist) folder:
+- [xwing-quickbuild-cards_all-factions.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_all-factions.pdf)
+- [xwing-quickbuild-cards_galactic-empire.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_galactic-empire.pdf)
+- [xwing-quickbuild-cards_rebel-alliance.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_rebel-alliance.pdf)
+- [xwing-quickbuild-cards_scum.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_scum.pdf)
+
+or
+
 1. Go to [xwing-quickbuild-cards.html](https://mootoneu.github.io/xwing-quickbuild-cards/xwing-quickbuild-cards.html)
 2. Select the ships you want on the left side bar (clicking on a faction title will hide/show its ships)
 3. Reload the page
@@ -23,7 +31,7 @@ A simple tool to print quickbuild cards for X-Wing the miniature game 2.0
     - A dot (•) to indicate that the upgrade is limited
     - A force power symbol to indicate that the upgrade has force power tokens
 - To the right:
-  - A vertical "DUAL #" to indicate the card is part of a pair named #. You must use both cards in your build.  
+  - A vertical "DUAL CARD #" to indicate the card is part of a pair named #. You must use both cards in your build. Note the costs are independent
 - At the bottom:
   - Faction icon
   - Card id (generated automatically, subject to change with future release)
