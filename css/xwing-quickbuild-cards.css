@@ -107,6 +107,11 @@ i.ship
   padding:0 .2em;
 }
 
+/*Tooltip images*/
+.ship-card, .upgrade-card  {
+  max-width: 100%;
+}
+
 /*Card id*/
 .card-id {
   position:absolute;

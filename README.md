@@ -34,7 +34,14 @@ or
   - A vertical "DUAL CARD #" to indicate the card is part of a pair named #. You must use both cards in your build. Note the costs are independent
 - At the bottom:
   - Faction icon
-  - Card id (generated automatically, subject to change with future release)
+  - Card id
+
+## Search card & preview
+To search for a card by its id, type it in the input text field on the top left of the page, then press tab or enter. The page will scroll automatically to this card id (if the card is not hidden) and highlight it in blue.
+
+Hover on a ship pilot name to view the corresponding card
+
+Hover on an upgrade name to view the corresponding name
 
 ## Ship cost & other informations
 The data come from [Guido Kessels' project xwing-data2](https://github.com/guidokessels/xwing-data2/)

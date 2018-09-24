@@ -50,10 +50,14 @@ var qb = {
   		'async': false,
   		'global': false,
   		'url': path,
-  		'dataType': "json",
+      'dataType': "json",
+      'mimeType': "application/json",
   		'success': function (data) {
   			json = data;
-  		}
+  		},
+      'error': function (data) {
+        console.log("Error", path)
+  		},
   	});
     return json;
   },
@@ -121,8 +125,9 @@ var qb = {
     var variant = (pilot_qb.hasOwnProperty("variant")?" variant-"+pilot_qb.variant:"");
     var force = (pilot.hasOwnProperty("force")?" forcepower forcepower-"+pilot.force:"");
     var title_text = (pilot_qb.hasOwnProperty("title")?pilot_qb.title:"") + pilot.name;
-    var title = $("<div>", {"class":"name faction-"+pilot.faction_xws+limited+variant+force, "text":title_text}).appendTo(card);
-
+    var title = $("<div>", {"class":"name faction-"+pilot.faction_xws+limited+variant+force, "text":title_text, "title":""});
+    title.tooltip({"content":"<img class='ship-card' src='"+pilot.image+"'/>"});
+    title.appendTo(card);
     //update cost
     cost += pilot.cost;
 
@@ -155,7 +160,8 @@ var qb = {
         var limited = upgrade.limited == 1 ?" limited":"";
         var force = (upgrade.sides[0].hasOwnProperty("force")?" forcepower forcepower-"+upgrade.sides[0].force:"");
         var doubleslot =  (upgrade.sides[0].slots.length == 2?" upgrade-slots-2":"");
-        var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type+doubleslot});
+        var li = $("<li>", {"class":"upgrade upgrade-"+upgrade.type+doubleslot, "title":""});
+        li.tooltip({"content":"<img class='upgrade-card' src='"+upgrade.sides[0].image+"'/>"});
         var span = $("<span>", {"class":"upgrade-name"+limited+force, "text":upgrade.name}).appendTo(li);
         li.appendTo(ul);
       }
