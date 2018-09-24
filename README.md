@@ -1,9 +1,11 @@
 # X-Wing 2.0 Quickbuild cards viewer
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Reddit: elaum](https://img.shields.io/badge/Reddit-Elaum-blue.svg)](https://www.reddit.com/u/elaum)
 
-A simple tool to print quickbuild cards for X-Wing the miniature game 2.0
+A simple tool to view & print quickbuild cards for [X-Wing Second Edition](https://www.fantasyflightgames.com/en/products/x-wing-second-edition/)
 
-## How to print
-1. Download one of the ready-to-print pdfs in the [dist](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist) folder:
+## Usage
+1. Download one of the ready-to-print pdfs (right-click, save as...):
 - [xwing-quickbuild-cards_all-factions.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_all-factions.pdf)
 - [xwing-quickbuild-cards_galactic-empire.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_galactic-empire.pdf)
 - [xwing-quickbuild-cards_rebel-alliance.pdf](https://github.com/mootoneu/xwing-quickbuild-cards/tree/master/dist/xwing-quickbuild-cards_rebel-alliance.pdf)
@@ -13,7 +15,7 @@ or
 
 1. Go to [xwing-quickbuild-cards.html](https://mootoneu.github.io/xwing-quickbuild-cards/xwing-quickbuild-cards.html)
 2. Select the ships you want on the left side bar (clicking on a faction title will hide/show its ships)
-3. Reload the page
+3. Reload the page (the selection is saved)
 4. Print it
 
 ## What's on the card
@@ -66,6 +68,7 @@ As stated in the rulebook p.15:
 
 Nevertheless, whether you prefer the point cost or threat level, both are printed on the cards top right.
 For the curious, I've noted that usualy the correspondence is the following:
+
 | Threat | Cost range |
 | --- | --- |
 | 1 | 0-30 |
@@ -83,9 +86,9 @@ But there are some exceptions such as:
 
 ## Authors
 
-* **Mooton.eu** - *Initial work* - [mootoneu](https://github.com/mootoneu)
-
+* **Elaum** - *Initial work* - [![Reddit: elaum](https://img.shields.io/badge/Reddit-Elaum-blue.svg)](https://www.reddit.com/u/elaum)
+* Feel free to contribute
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
