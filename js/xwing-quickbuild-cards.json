@@ -5,21 +5,25 @@
     "pilots":[
       {
         "pilot":"braylenstramm",
+        "id":1,
         "threat":2,
         "upgrades":["trickshot", "jammingbeam"]
       },
       {
         "pilot":"bladesquadronveteran",
+        "id":2,
         "threat":2,
         "upgrades":["elusive", "tractorbeam"]
       },
       {
         "pilot":"bluesquadronpilot",
+        "id":3,
         "threat":2,
         "upgrades":["advancedsensors"]
       },
       {
         "pilot":"tennumb",
+        "id":4,
         "threat":3,
         "upgrades":["squadleader", "advancedsensors", "heavylasercannon", "shieldupgrade"]
       }
@@ -31,21 +35,25 @@
     "pilots":[
       {
         "pilot":"ibtisam",
+        "id":5,
         "threat":2,
         "upgrades":["elusive"]
       },
       {
         "pilot":"norrawexley",
+        "id":6,
         "threat":3,
         "upgrades":["experthandling", "seasonednavigator", "veterantailgunner", "r3astromech", "ablativeplating", "hullupgrade"]
       },
       {
         "pilot":"garvendreis",
+        "id":7,
         "threat":3,
         "upgrades":["experthandling", "protontorpedoes", "perceptivecopilot", "veterantailgunner"]
       },
       {
         "pilot":"sharabey",
+        "id":8,
         "threat":3,
         "upgrades":["experthandling", "protontorpedoes", "perceptivecopilot", "r3astromech"]
       }
@@ -57,11 +65,13 @@
     "pilots":[
       {
         "pilot":"herasyndulla",
+        "id":9,
         "threat":2,
         "upgrades":["elusive", "ioncannonturret", "phantom"]
       },
       {
         "pilot":"sabinewren",
+        "id":10,
         "threat":2,
         "upgrades":["outmaneuver", "dorsalturret", "phantom"]
       }
@@ -73,16 +83,19 @@
     "pilots":[
       {
         "pilot":"kashyyykdefender",
+        "id":11,
         "threat":2,
         "upgrades":["novicetechnician"]
       },
       {
         "pilot":"lowhhrick",
+        "id":12,
         "threat":2,
         "upgrades":[]
       },
       {
         "pilot":"wullffwarro",
+        "id":13,
         "threat":3,
         "upgrades":["selfless", "gnkgonkdroid", "novicetechnician", "hullupgrade"]
       }
@@ -95,31 +108,37 @@
 
       {
         "pilot":"dutchvander",
+        "id":14,
         "threat":2,
         "upgrades":["protontorpedoes", "r3astromech"]
       },
       {
         "pilot":"graysquadronbomber",
+        "id":15,
         "threat":2,
         "upgrades":["ioncannonturret", "protonbombs", "r5astromech"]
       },
       {
         "pilot":"evaanverlaine",
+        "id":16,
         "threat":2,
         "upgrades":["experthandling","ioncannonturret"]
       },
       {
         "pilot":"goldsquadronveteran",
+        "id":17,
         "threat":2,
         "upgrades":["experthandling","protontorpedoes","r3astromech"]
       },
       {
         "pilot":"hortonsalm",
+        "id":18,
         "threat":3,
         "upgrades":["outmaneuver","ioncannonturret","veteranturretgunner","r5astromech"]
       },
       {
         "pilot":"norrawexley-btla4ywing",
+        "id":19,
         "threat":3,
         "upgrades":["experthandling","ioncannonturret","veteranturretgunner","r3astromech"]
       }
@@ -131,16 +150,19 @@
     "pilots":[
       {
         "pilot":"mirandadoni",
+        "id":20,
         "threat":2,
         "upgrades":["protonbombs", "advancedslam"]
       },
       {
         "pilot":"wardensquadronpilot",
+        "id":21,
         "threat":2,
         "upgrades":["barragerockets", "bombletgenerator"]
       },
       {
         "pilot":"esegetuketu",
+        "id":22,
         "threat":3,
         "upgrades":["trajectorysimulator", "ionmissiles", "perceptivecopilot", "connernets", "protonbombs", "advancedslam"]
       }
@@ -152,21 +174,25 @@
     "pilots":[
       {
         "pilot":"knavesquadronescort",
+        "id":23,
         "threat":2,
         "upgrades":[]
       },
       {
         "pilot":"roguesquadronescort",
+        "id":24,
         "threat":3,
         "upgrades":["predator", "collisiondetector", "protontorpedoes", "r3astromech"]
       },
       {
         "pilot":"gavindarklighter",
+        "id":25,
         "threat":3,
         "upgrades":["crackshot", "firecontrolsystem", "iontorpedoes", "r4astromech"]
       },
       {
         "pilot":"corranhorn",
+        "id":26,
         "threat":4,
         "upgrades":["outmaneuver", "firecontrolsystem", "protontorpedoes", "r2astromech", "afterburners"]
       }
@@ -178,21 +204,25 @@
     "pilots":[
       {
         "pilot":"roarkgarnet",
+        "id":27,
         "threat":2,
         "upgrades":["daredevil", "seismiccharges", "hullupgrade", "shieldupgrade"]
       },
       {
         "pilot":"rebelscout",
+        "id":28,
         "threat":2,
         "upgrades":["sabinewren", "protonbombs", "seismiccharges", "engineupgrade"]
       },
       {
         "pilot":"kylekatarn",
+        "id":29,
         "threat":2,
         "upgrades":["moldycrow"]
       },
       {
         "pilot":"janors",
+        "id":30,
         "threat":3,
         "upgrades":["trickshot", "perceptivecopilot", "seismiccharges", "cloakingdevice", "engineupgrade", "moldycrow"]
       }
@@ -204,21 +234,25 @@
     "pilots":[
       {
         "pilot":"outerrimsmuggler",
+        "id":31,
         "threat":4,
         "upgrades":["homingmissiles", "novicetechnician", "veteranturretgunner", "feedbackarray", "staticdischargevanes"]
       },
       {
         "pilot":"landocalrissian-modifiedyt1300lightfreighter",
+        "id":32,
         "threat":5,
         "upgrades":["swarmtactics", "concussionmissiles", "niennunb", "engineupgrade", "millenniumfalcon"]
       },
       {
         "pilot":"hansolo-modifiedyt1300lightfreighter",
+        "id":33,
         "threat":5,
         "upgrades":["lonewolf", "chewbacca", "millenniumfalcon"]
       },
       {
         "pilot":"chewbacca",
+        "id":34,
         "threat":6,
         "upgrades":["predator", "c3po", "leiaorgana", "r2d2", "hansolo", "lukeskywalker", "engineupgrade", "millenniumfalcon"]
       }
@@ -230,21 +264,25 @@
     "pilots":[
       {
         "pilot":"arvelcrynyd",
+        "id":35,
         "threat":2,
         "upgrades":["intimidation", "protonrockets", "hullupgrade"]
       },
       {
         "pilot":"greensquadronpilot",
+        "id":36,
         "threat":2,
         "upgrades":["daredevil", "concussionmissiles", "shieldupgrade"]
       },
       {
         "pilot":"jakefarrell",
+        "id":37,
         "threat":2,
         "upgrades":["outmaneuver", "clustermissiles"]
       },
       {
         "pilot":"phoenixsquadronpilot",
+        "id":38,
         "threat":3,
         "upgrades":["protonrockets"],
         "title":"2x "
@@ -257,11 +295,13 @@
     "pilots":[
       {
         "pilot":"ezrabridger-sheathipedeclassshuttle",
+        "id":39,
         "threat":2,
         "upgrades":["heightenedperception", "chopper", "afterburners", "phantom"]
       },
       {
         "pilot":"fennrau-sheathipedeclassshuttle",
+        "id":40,
         "threat":3,
         "upgrades":["outmaneuver", "seasonednavigator", "r4astromech", "stealthdevice", "phantom"]
       }
@@ -273,64 +313,76 @@
     "pilots":[
       {
         "pilot":"biggsdarklighter",
+        "id":41,
         "threat":2,
         "upgrades":["selfless", "servomotorsfoils"]
       },
       {
         "pilot":"bluesquadronescort",
+        "id":42,
         "threat":2,
         "upgrades":["protontorpedoes", "r3astromech", "servomotorsfoils"]
       },
       {
         "pilot":"garvendreis-t65xwing",
+        "id":43,
         "threat":2,
         "upgrades":["servomotorsfoils"]
       },
       {
         "pilot":"redsquadronveteran",
+        "id":44,
         "threat":2,
         "upgrades":["predator", "r5astromech", "servomotorsfoils"]
       },
       {
         "pilot":"cavernangelszealot",
+        "id":45,
         "threat":2,
         "upgrades":["r2astromech", "deadmansswitch", "servomotorsfoils"],
         "variant":"partisant"
       },
       {
         "pilot":"edriotwotubes",
+        "id":46,
         "threat":2,
         "upgrades":["trickshot", "r4astromech", "deadmansswitch", "servomotorsfoils"],
         "variant":"partisant"
       },
       {
         "pilot":"leevantenza",
+        "id":47,
         "threat":2,
         "upgrades":["elusive", "r2astromech", "deadmansswitch", "afterburners", "shieldupgrade", "servomotorsfoils"],
         "variant":"partisant"
       },
       {
         "pilot":"jekporkins",
+        "id":48,
         "threat":3,
         "upgrades":["outmaneuver", "r5d8", "hullupgrade", "afterburners", "servomotorsfoils"]
       },
       {
         "pilot":"lukeskywalker",
+        "id":49,
         "threat":3,
         "upgrades":["protontorpedoes", "r2d2", "instinctiveaim", "servomotorsfoils"]
       },
       {
         "pilot":"thanekyrell",
+        "id":50,
         "threat":3,
         "upgrades":["elusive", "iontorpedoes", "r2astromech", "afterburners", "hullupgrade", "servomotorsfoils"]
       },
       {
         "pilot":"wedgeantilles",
+        "id":51,
         "threat":3,
         "upgrades":["outmaneuver", "protontorpedoes", "r4astromech", "shieldupgrade", "servomotorsfoils"]
       },
       {
         "pilot":"kullbeesperado",
+        "id":52,
         "threat":3,
         "upgrades":["outmaneuver", "r2astromech", "deadmansswitch", "afterburners", "hullupgrade", "servomotorsfoils"],
         "variant":"partisant"
@@ -343,21 +395,25 @@
     "pilots":[
       {
         "pilot":"zeborrelios-tielnfighter",
+        "id":53,
         "threat":1,
         "upgrades":[]
       },
       {
         "pilot":"ezrabridger-tielnfighter",
+        "id":54,
         "threat":2,
         "upgrades":["supernaturalreflexes", "zeborrelios", "hullupgrade"]
       },
       {
         "pilot":"captainrex",
+        "id":55,
         "threat":2,
         "upgrades":["elusive", "juke", "stealthdevice"]
       },
       {
         "pilot":"sabinewren-tielnfighter",
+        "id":56,
         "threat":2,
         "upgrades":["outmaneuver", "connernets", "hullupgrade"]
       }
@@ -369,44 +425,52 @@
     "pilots":[
       {
         "pilot":"bodhirook",
+        "id":57,
         "threat":2,
         "upgrades":["cassianandor", "pivotwing"]
       },
       {
         "pilot":"bluesquadronscout",
+        "id":58,
         "threat":2,
         "upgrades":["tacticalofficer", "advancedsensors", "pivotwing"]
       },
       {
         "pilot":"partisanrenegade",
+        "id":59,
         "threat":2,
         "upgrades":["advancedsensors", "deadmansswitch", "pivotwing"],
         "variant":"partisant"
       },
       {
         "pilot":"benthictwotubes",
+        "id":60,
         "threat":2,
         "upgrades":["advancedsensors", "pivotwing"],
         "variant":"partisant"
       },
       {
         "pilot":"sawgerrera",
+        "id":61,
         "threat":2,
         "upgrades":["magvayarro", "pivotwing"],
         "variant":"partisant"
       },
       {
         "pilot":"cassianandor",
+        "id":62,
         "threat":3,
         "upgrades":["firecontrolsystem", "jynerso", "bazemalbus", "pivotwing"]
       },
       {
         "pilot":"hefftobber",
+        "id":63,
         "threat":3,
         "upgrades":["firecontrolsystem", "ioncannonturret", "bistan", "perceptivecopilot", "pivotwing"]
       },
       {
         "pilot":"magvayarro",
+        "id":64,
         "threat":3,
         "upgrades":["elusive", "sawgerrera", "advancedsensors", "shieldupgrade", "pivotwing"],
         "variant":"partisant"
@@ -419,44 +483,52 @@
     "pilots":[
       {
         "pilot":"lothalrebel",
+        "id":65,
         "threat":6,
         "upgrades":["dorsalturret", "landocalrissian", "ghost"],
         "docked":{
           "ship":"sheathipedeclassshuttle",
           "pilot":"zeborrelios-sheathipedeclassshuttle",
+        "id":66,
           "threat":6,
           "upgrades":["r5astromech", "phantom"]
         }
       },
       {
         "pilot":"chopper",
+        "id":67,
         "threat":6,
         "upgrades":["ioncannonturret", "zeborrelios", "ghost"],
         "docked":{
           "ship":"sheathipedeclassshuttle",
           "pilot":"ap5",
+        "id":68,
           "threat":6,
           "upgrades":["r4astromech", "phantom"]
         }
       },
       {
         "pilot":"herasyndulla-vcx100lightfreighter",
+        "id":69,
         "threat":6,
         "upgrades":["elusive", "dorsalturret", "kananjarrus", "ghost"],
         "docked":{
           "ship":"attackshuttle",
           "pilot":"ezrabridger",
+        "id":70,
           "threat":6,
           "upgrades":["supernaturalreflexes", "dorsalturret", "phantom"]
         }
       },
       {
         "pilot":"kananjarrus",
+        "id":71,
         "threat":6,
         "upgrades":["ioncannonturret", "herasyndulla", "chopper", "ezrabridger", "ghost"],
         "docked":{
           "ship":"attackshuttle",
           "pilot":"zeborrelios",
+        "id":72,
           "threat":6,
           "upgrades":["phantom"]
         }
@@ -469,16 +541,19 @@
     "pilots":[
       {
         "pilot":"wildspacefringer",
+        "id":73,
         "threat":4,
         "upgrades":["concussionmissiles", "veteranturretgunner", "contrabandcybernetics"]
       },
       {
         "pilot":"leebo",
+        "id":74,
         "threat":4,
         "upgrades":["outrider", "inertialdampeners"]
       },
       {
         "pilot":"dashrendar",
+        "id":75,
         "threat":5,
         "upgrades":["experthandling", "trickshot", "perceptivecopilot", "riggedcargochute", "outrider"]
       }
@@ -490,21 +565,25 @@
     "pilots":[
       {
         "pilot":"banditsquadronpilot",
+        "id":76,
         "threat":1,
         "upgrades":[]
       },
       {
         "pilot":"talasquadronpilot",
+        "id":77,
         "threat":1,
         "upgrades":["selfless"]
       },
       {
         "pilot":"airencracken",
+        "id":78,
         "threat":2,
         "upgrades":["swarmtactics", "clustermissiles", "hullupgrade"]
       },
       {
         "pilot":"lieutenantblount",
+        "id":79,
         "threat":2,
         "upgrades":["outmaneuver", "protonrockets", "shieldupgrade"]
       }
@@ -520,63 +599,75 @@
     "pilots":[
       {
         "pilot":"academypilot",
+        "id":80,
         "threat":1,
         "upgrades":[]
       },
       {
         "pilot":"obsidiansquadronpilot",
+        "id":81,
         "threat":1,
         "upgrades":[]
       },
       {
         "pilot":"scourgeskutu",
+        "id":82,
         "threat":2,
         "upgrades":["predator", "shieldupgrade"]
       },
       {
         "pilot":"wampa",
+        "id":83,
         "threat":2,
         "upgrades":["crackshot", "hullupgrade", "stealthdevice"]
       },
       {
         "pilot":"blacksquadronace",
+        "id":84,
         "threat":2,
         "upgrades":["crackshot", "afterburners", "shieldupgrade"]
       },
       {
         "pilot":"gideonhask",
+        "id":85,
         "threat":2,
         "upgrades":["crackshot", "shieldupgrade"]
       },
       {
         "pilot":"delmeeko",
+        "id":86,
         "threat":2,
         "upgrades":["juke", "stealthdevice"]
       },
       {
         "pilot":"howlrunner",
+        "id":87,
         "threat":2,
         "upgrades":["juke", "shieldupgrade"]
       },
       {
         "pilot":"seynmarana",
+        "id":88,
         "threat":2,
         "upgrades":["marksmanship", "afterburners"]
       },
       {
         "pilot":"academypilot",
+        "id":89,
         "threat":2,
         "upgrades":[],
         "title":"2x "
       },
       {
         "pilot":"blacksquadronace",
+        "id":90,
         "threat":3,
         "upgrades":["juke", "stealthdevice"],
         "title":"2x "
       },
       {
         "pilot":"obsidiansquadronpilot",
+        "id":91,
         "threat":3,
         "upgrades":["outmaneuver", "shieldupgrade"],
         "title":"2x "
@@ -589,31 +680,37 @@
     "pilots":[
       {
         "pilot":"stormsquadronace",
+        "id":92,
         "threat":2,
         "upgrades":["firecontrolsystem"]
       },
       {
         "pilot":"tempestsquadronpilot",
+        "id":93,
         "threat":2,
         "upgrades":["clustermissiles"]
       },
       {
         "pilot":"maarekstele",
+        "id":94,
         "threat":3,
         "upgrades":["ruthless", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
       },
       {
         "pilot":"vedfoslo",
+        "id":95,
         "threat":3,
         "upgrades":["outmaneuver", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
       },
       {
         "pilot":"zertikstrom",
+        "id":96,
         "threat":3,
         "upgrades":["squadleader", "firecontrolsystem", "clustermissiles", "shieldupgrade"]
       },
       {
         "pilot":"darthvader",
+        "id":97,
         "threat":4,
         "upgrades":["supernaturalreflexes", "firecontrolsystem", "clustermissiles", "afterburners", "shieldupgrade"]
       }
@@ -625,21 +722,25 @@
     "pilots":[
       {
         "pilot":"omicrongrouppilot",
+        "id":98,
         "threat":2,
         "upgrades":["admiralsloane", "jammingbeam"]
       },
       {
         "pilot":"lieutenantsai",
+        "id":99,
         "threat":3,
         "upgrades":["cienaree", "gnkgonkdroid", "advancedsensors", "jammingbeam"]
       },
       {
         "pilot":"captainkagi",
+        "id":100,
         "threat":3,
         "upgrades":["collisiondetector", "tractorbeam", "emperorpalpatine", "shieldupgrade", "staticdischargevanes"]
       },
       {
         "pilot":"coloneljendon",
+        "id":101,
         "threat":3,
         "upgrades":["collisiondetector", "ioncannon", "darthvader", "freelanceslicer", "st321"]
       }
@@ -651,21 +752,25 @@
     "pilots":[
       {
         "pilot":"onyxsquadronscout",
+        "id":102,
         "threat":2,
         "upgrades":["outmaneuver", "dorsalturret", "protonrockets"]
       },
       {
         "pilot":"sienarspecialist",
+        "id":103,
         "threat":2,
         "upgrades":["ioncannonturret", "homingmissiles", "veteranturretgunner", "hullupgrade"]
       },
       {
         "pilot":"lieutenantkestal",
+        "id":104,
         "threat":2,
         "upgrades":["elusive", "barragerockets", "shieldupgrade"]
       },
       {
         "pilot":"doubleedge",
+        "id":105,
         "threat":2,
         "upgrades":["ioncannonturret", "concussionmissiles", "hotshotgunner"]
       }
@@ -677,21 +782,25 @@
     "pilots":[
       {
         "pilot":"imdaartestpilot",
+        "id":106,
         "threat":2,
         "upgrades":["moffjerjerrod"]
       },
       {
         "pilot":"sigmasquadronace",
+        "id":107,
         "threat":2,
         "upgrades":["predator", "advancedsensors", "grandinquisitor"]
       },
       {
         "pilot":"echo",
+        "id":108,
         "threat":3,
         "upgrades":["lonewolf", "collisiondetector", "perceptivecopilot", "stealthdevice"]
       },
       {
         "pilot":"whisper",
+        "id":109,
         "threat":3,
         "upgrades":["juke", "advancedsensors", "agentkallus", "stealthdevice"]
       }
@@ -703,26 +812,31 @@
     "pilots":[
       {
         "pilot":"blacksquadronscout",
+        "id":110,
         "threat":2,
         "upgrades":["skilledbombardier", "proximitymines", "hullupgrade"]
       },
       {
         "pilot":"duchess",
+        "id":111,
         "threat":2,
         "upgrades":["trickshot", "shieldupgrade"]
       },
       {
         "pilot":"countdown",
+        "id":112,
         "threat":2,
         "upgrades":["shieldupgrade"]
       },
       {
         "pilot":"puresabacc",
+        "id":113,
         "threat":2,
         "upgrades":["stealthdevice"]
       },
       {
         "pilot":"planetarysentinel",
+        "id":114,
         "threat":3,
         "upgrades":["connernets"],
         "title":"2x "
@@ -735,31 +849,37 @@
     "pilots":[
       {
         "pilot":"onyxsquadronace",
+        "id":115,
         "threat":3,
         "upgrades":[]
       },
       {
         "pilot":"deltasquadronpilot",
+        "id":116,
         "threat":3,
         "upgrades":["ioncannon"]
       },
       {
         "pilot":"onyxsquadronace",
+        "id":117,
         "threat":4,
         "upgrades":["elusive", "advancedsensors", "protonrockets"]
       },
       {
         "pilot":"countessryad",
+        "id":118,
         "threat":4,
         "upgrades":["outmaneuver", "afterburners"]
       },
       {
         "pilot":"rexlerbrath",
+        "id":119,
         "threat":4,
         "upgrades":["juke", "collisiondetector", "clustermissiles"]
       },
       {
         "pilot":"colonelvessery",
+        "id":120,
         "threat":4,
         "upgrades":["juke", "firecontrolsystem", "clustermissiles"]
       }
@@ -771,31 +891,37 @@
     "pilots":[
       {
         "pilot":"gammasquadronace",
+        "id":121,
         "threat":2,
         "upgrades":["concussionmissiles", "skilledbombardier", "bombletgenerator", "shieldupgrade"]
       },
       {
         "pilot":"tomaxbren",
+        "id":122,
         "threat":2,
         "upgrades":["crackshot", "protontorpedoes", "protonbombs"]
       },
       {
         "pilot":"deathfire",
+        "id":123,
         "threat":2,
         "upgrades":["clustermissiles", "skilledbombardier", "seismiccharges", "proximitymines", "electronicbaffle"]
       },
       {
         "pilot":"majorrhymer",
+        "id":124,
         "threat":2,
         "upgrades":["intimidation", "advprotontorpedoes", "clustermissiles"]
       },
       {
         "pilot":"captainjonus",
+        "id":125,
         "threat":2,
         "upgrades":["protontorpedoes", "shieldupgrade"]
       },
       {
         "pilot":"scimitarsquadronpilot",
+        "id":126,
         "threat":3,
         "upgrades":["ionmissiles", "protonbombs"],
         "title":"2x "
@@ -808,21 +934,25 @@
     "pilots":[
       {
         "pilot":"inquisitor",
+        "id":127,
         "threat":2,
         "upgrades":["instinctiveaim", "clustermissiles", "munitionsfailsafe"]
       },
       {
         "pilot":"baronoftheempire",
+        "id":128,
         "threat":2,
         "upgrades":["crackshot", "protonrockets", "stealthdevice"]
       },
       {
         "pilot":"seventhsister",
+        "id":129,
         "threat":2,
         "upgrades":["homingmissiles"]
       },
       {
         "pilot":"grandinquisitor",
+        "id":130,
         "threat":3,
         "upgrades":["supernaturalreflexes", "concussionmissiles"]
       }
@@ -834,21 +964,25 @@
     "pilots":[
       {
         "pilot":"sabersquadronace",
+        "id":131,
         "threat":2,
         "upgrades":["predator", "stealthdevice"]
       },
       {
         "pilot":"turrphennir",
+        "id":132,
         "threat":2,
         "upgrades":["daredevil", "electronicbaffle"]
       },
       {
         "pilot":"soontirfel",
+        "id":133,
         "threat":3,
         "upgrades":["outmaneuver", "afterburners", "stealthdevice"]
       },
       {
         "pilot":"alphasquadronpilot",
+        "id":134,
         "threat":3,
         "upgrades":["ablativeplating"],
         "title":"2x "
@@ -861,21 +995,25 @@
     "pilots":[
       {
         "pilot":"nusquadronpilot",
+        "id":135,
         "threat":2,
         "upgrades":["firecontrolsystem", "protontorpedoes", "advancedslam", "os1arsenalloadout"]
       },
       {
         "pilot":"rhosquadronpilot",
+        "id":136,
         "threat":2,
         "upgrades":["firecontrolsystem", "ioncannon", "homingmissiles", "advancedslam", "xg1assaultconfiguration"]
       },
       {
         "pilot":"lieutenantkarsabi",
+        "id":137,
         "threat":2,
         "upgrades":["outmaneuver", "heavylasercannon", "advancedslam", "xg1assaultconfiguration"]
       },
       {
         "pilot":"majorvynder",
+        "id":138,
         "threat":2,
         "upgrades":["saturationsalvo", "barragerockets", "advancedslam", "os1arsenalloadout"]
       }
@@ -887,21 +1025,25 @@
     "pilots":[
       {
         "pilot":"cutlasssquadronpilot",
+        "id":139,
         "threat":2,
         "upgrades":["trajectorysimulator", "ionmissiles", "skilledbombardier", "protonbombs"]
       },
       {
         "pilot":"cutlasssquadronpilot",
+        "id":140,
         "threat":2,
         "upgrades":["advancedsensors", "protonrockets", "connernets"]
       },
       {
         "pilot":"deathrain",
+        "id":141,
         "threat":2,
         "upgrades":["trajectorysimulator", "homingmissiles", "bombletgenerator", "ablativeplating"]
       },
       {
         "pilot":"redline",
+        "id":142,
         "threat":2,
         "upgrades":["debrisgambit", "clustermissiles"]
       }
@@ -913,16 +1055,19 @@
     "pilots":[
       {
         "pilot":"patrolleader",
+        "id":143,
         "threat":4,
         "upgrades":["informant", "seventhsister", "fifthbrother"]
       },
       {
         "pilot":"captainoicunn",
+        "id":144,
         "threat":4,
         "upgrades":["intimidation", "grandmofftarkin", "dauntless"]
       },
       {
         "pilot":"rearadmiralchiraneau",
+        "id":145,
         "threat":4,
         "upgrades":["swarmtactics", "ministertua", "tacticalofficer"]
       }
@@ -934,21 +1079,25 @@
     "pilots":[
       {
         "pilot":"scarifbasepilot",
+        "id":146,
         "threat":2,
         "upgrades":["deathtroopers", "shieldupgrade"]
       },
       {
         "pilot":"vizier",
+        "id":147,
         "threat":2,
         "upgrades":["directorkrennic"]
       },
       {
         "pilot":"majorvermeil",
+        "id":148,
         "threat":2,
         "upgrades":["swarmtactics", "tacticalofficer"]
       },
       {
         "pilot":"captainferoph",
+        "id":149,
         "threat":2,
         "upgrades":["swarmtactics", "isbslicer"]
       }
@@ -960,31 +1109,37 @@
     "pilots":[
       {
         "pilot":"bountyhunter",
+        "id":150,
         "threat":3,
         "upgrades":["perceptivecopilot", "inertialdampeners", "seismiccharges"]
       },
       {
         "pilot":"kathscarlet",
+        "id":151,
         "threat":3,
         "upgrades":["marauder"]
       },
       {
         "pilot":"krassistrelix",
+        "id":152,
         "threat":3,
         "upgrades":["concussionmissiles"]
       },
       {
         "pilot":"koshkafrost",
+        "id":153,
         "threat":3,
         "upgrades":["perceptivecopilot"]
       },
       {
         "pilot":"bobafett",
+        "id":154,
         "threat":4,
         "upgrades":["lonewolf", "perceptivecopilot", "inertialdampeners", "seismiccharges", "slavei"]
       },
       {
         "pilot":"emonazzameen",
+        "id":155,
         "threat":3,
         "upgrades":["elusive", "perceptivecopilot", "inertialdampeners", "proximitymines", "seismiccharges", "andrasta"]
       }
@@ -996,31 +1151,37 @@
     "pilots":[
       {
         "pilot":"zealousrecruit",
+        "id":156,
         "threat":2,
         "upgrades":["protontorpedoes"]
       },
       {
         "pilot":"skullsquadronpilot",
+        "id":157,
         "threat":2,
         "upgrades":["fearless"]
       },
       {
         "pilot":"oldteroch",
+        "id":158,
         "threat":2,
         "upgrades":[]
       },
       {
         "pilot":"kadsolus",
+        "id":159,
         "threat":2,
         "upgrades":["fearless"]
       },
       {
         "pilot":"joyrekkoff",
+        "id":160,
         "threat":3,
         "upgrades":["predator", "iontorpedoes", "afterburners", "hullupgrade"]
       },
       {
         "pilot":"fennrau",
+        "id":161,
         "threat":3,
         "upgrades":["daredevil", "afterburners", "hullupgrade"]
       }
@@ -1032,21 +1193,25 @@
     "pilots":[
       {
         "pilot":"shadowporthunter",
+        "id":162,
         "threat":3,
         "upgrades":["maul", "contrabandcybernetics"]
       },
       {
         "pilot":"sabinewren-lancerclasspursuitcraft",
+        "id":163,
         "threat":3,
         "upgrades":["fearless", "ketsuonyo", "shadowcaster"]
       },
       {
         "pilot":"ketsuonyo",
+        "id":164,
         "threat":4,
         "upgrades":["outmaneuver", "riggedcargochute", "shieldupgrade", "shadowcaster"]
       },
       {
         "pilot":"asajjventress",
+        "id":165,
         "threat":4,
         "upgrades":["sense", "veteranturretgunner", "deadmansswitch", "inertialdampeners"]
       }
@@ -1058,31 +1223,37 @@
     "pilots":[
       {
         "pilot":"cartelmarauder",
+        "id":166,
         "threat":2,
         "upgrades":["concussionmissiles", "hullupgrade", "munitionsfailsafe"]
       },
       {
         "pilot":"blacksunace",
+        "id":167,
         "threat":2,
         "upgrades":["predator", "shieldupgrade"]
       },
       {
         "pilot":"captainjostero",
+        "id":168,
         "threat":2,
         "upgrades":["ionmissiles", "munitionsfailsafe"]
       },
       {
         "pilot":"talonbanecobra",
+        "id":169,
         "threat":3,
         "upgrades":["outmaneuver", "clustermissiles", "inertialdampeners", "afterburners", "electronicbaffle", "shieldupgrade"]
       },
       {
         "pilot":"viktorhel",
+        "id":170,
         "threat":3,
         "upgrades":["crackshot", "stealthdevice"]
       },
       {
         "pilot":"graz",
+        "id":171,
         "threat":3,
         "upgrades":["outmaneuver", "concussionmissiles", "contrabandcybernetics", "afterburners"]
       }
@@ -1094,21 +1265,25 @@
     "pilots":[
       {
         "pilot":"hiredgun",
+        "id":172,
         "threat":2,
         "upgrades":["crackshot", "ioncannonturret", "veteranturretgunner", "r3astromech", "connernets"]
       },
       {
         "pilot":"crymorahgoon",
+        "id":173,
         "threat":2,
         "upgrades":["dorsalturret", "iontorpedoes", "r3astromech", "inertialdampeners", "proximitymines"]
       },
       {
         "pilot":"drearenthal",
+        "id":174,
         "threat":2,
         "upgrades":["experthandling", "ioncannonturret", "hotshotgunner"]
       },
       {
         "pilot":"kavil",
+        "id":175,
         "threat":2,
         "upgrades":["experthandling", "dorsalturret", "genius", "protonbombs", "afterburners"]
       }
@@ -1120,21 +1295,25 @@
     "pilots":[
       {
         "pilot":"dacebonearm",
+        "id":176,
         "threat":2,
         "upgrades":["feedbackarray", "connernets", "staticdischargevanes"]
       },
       {
         "pilot":"palobgodalhi",
+        "id":177,
         "threat":2,
         "upgrades":["debrisgambit", "juke", "contrabandcybernetics", "stealthdevice"]
       },
       {
         "pilot":"torkilmux",
+        "id":178,
         "threat":2,
         "upgrades":["cloakingdevice", "proximitymines"]
       },
       {
         "pilot":"spicerunner",
+        "id":179,
         "threat":3,
         "upgrades":["deadmansswitch", "protonbombs", "electronicbaffle"],
         "title":"2x "
@@ -1147,22 +1326,26 @@
     "pilots":[
       {
         "pilot":"jakkugunrunner",
+        "id":180,
         "threat":2,
         "upgrades":["novicetechnician", "proximitymines", "electronicbaffle"],
         "title":"2x "
       },
       {
         "pilot":"constablezuvio",
+        "id":181,
         "threat":2,
         "upgrades":["outmaneuver", "riggedcargochute", "connernets", "shieldupgrade"]
         },
       {
         "pilot":"sarcoplank",
+        "id":182,
         "threat":3,
         "upgrades":["unkarplutt", "feedbackarray", "seismiccharges", "hullupgrade", "shieldupgrade"]
       },
       {
         "pilot":"unkarplutt",
+        "id":183,
         "threat":3,
         "upgrades":["novicetechnician", "contrabandcybernetics", "proximitymines", "afterburners"]
       }
@@ -1174,26 +1357,31 @@
     "pilots":[
       {
         "pilot":"blacksunenforcer",
+        "id":184,
         "threat":2,
         "upgrades":["collisiondetector"]
       },
       {
         "pilot":"blacksunassassin",
+        "id":185,
         "threat":3,
         "upgrades":["fearless"]
       },
       {
         "pilot":"princexizor",
+        "id":186,
         "threat":3,
         "upgrades":["predator", "firecontrolsystem", "shieldupgrade", "virago"]
       },
       {
         "pilot":"guri",
+        "id":187,
         "threat":3,
         "upgrades":["daredevil", "advancedsensors", "advprotontorpedoes"]
       },
       {
         "pilot":"dalanoberos-starviperclassattackplatform",
+        "id":188,
         "threat":3,
         "upgrades":["outmaneuver", "firecontrolsystem", "protontorpedoes", "contrabandcybernetics"]
       }
@@ -1205,36 +1393,43 @@
     "pilots":[
       {
         "pilot":"serissu",
+        "id":189,
         "threat":2,
         "upgrades":["stealthdevice"]
       },
       {
         "pilot":"genesisred",
+        "id":190,
         "threat":2,
         "upgrades":["juke", "concussionmissiles", "munitionsfailsafe"]
       },
       {
         "pilot":"quinnjast",
+        "id":191,
         "threat":2,
         "upgrades":["crackshot", "advprotontorpedoes", "afterburners"]
       },
       {
         "pilot":"laetinashera",
+        "id":192,
         "threat":2,
         "upgrades":["juke", "clustermissiles", "munitionsfailsafe", "stealthdevice"]
       },
       {
         "pilot":"inaldra",
+        "id":193,
         "threat":2,
         "upgrades":["ioncannon", "hullupgrade", "shieldupgrade"]
       },
       {
         "pilot":"sunnybounder",
+        "id":194,
         "threat":2,
         "upgrades":["predator", "clustermissiles", "afterburners"]
       },
       {
         "pilot":"cartelspacer",
+        "id":195,
         "threat":3,
         "upgrades":["iontorpedoes", "munitionsfailsafe"],
         "title":"2x "
@@ -1253,21 +1448,25 @@
     "pilots":[
       {
         "pilot":"contractedscout",
+        "id":196,
         "threat":2,
         "upgrades":["iontorpedoes", "inertialdampeners"]
       },
       {
         "pilot":"teltrevura",
+        "id":197,
         "threat":3,
         "upgrades":["experthandling", "gnkgonkdroid", "protontorpedoes", "deadmansswitch"]
       },
       {
         "pilot":"dengar",
+        "id":198,
         "threat":3,
         "upgrades":["experthandling", "protontorpedoes", "r4astromech", "contrabandcybernetics", "punishingone"]
       },
       {
         "pilot":"manaroo",
+        "id":199,
         "threat":3,
         "upgrades":["intimidation", "perceptivecopilot", "protontorpedoes", "feedbackarray", "staticdischargevanes"]
       }
@@ -1279,22 +1478,26 @@
     "pilots":[
       {
         "pilot":"binayrepirate",
+        "id":200,
         "threat":1,
         "upgrades":[]
       },
       {
         "pilot":"ndrusuhlak",
+        "id":201,
         "threat":2,
         "upgrades":["lonewolf", "homingmissiles", "cloakingdevice", "hullupgrade"]
       },
       {
         "pilot":"blacksunsoldier",
+        "id":202,
         "threat":2,
         "upgrades":["experthandling", "concussionmissiles", "deadmansswitch", "hullupgrade"],
         "title":"2x "
       },
       {
         "pilot":"kaatoleeachos",
+        "id":203,
         "threat":3,
         "upgrades":["experthandling", "clustermissiles", "contrabandcybernetics", "afterburners"]
       }
@@ -1306,16 +1509,19 @@
     "pilots":[
       {
         "pilot":"gandfindsman",
+        "id":204,
         "threat":2,
         "upgrades":["firecontrolsystem", "freelanceslicer", "deadmansswitch", "electronicbaffle"]
       },
       {
         "pilot":"zuckuss",
+        "id":205,
         "threat":2,
         "upgrades":["juke", "tractorbeam", "4lom", "misthunter"]
       },
       {
         "pilot":"4lom",
+        "id":206,
         "threat":3,
         "upgrades":["elusive", "advancedsensors", "000", "zuckuss", "bt1", "misthunter"]
       }
@@ -1327,38 +1533,45 @@
     "pilots":[
       {
         "pilot":"trandoshanslaver",
+        "id":207,
         "threat":3,
         "upgrades":["hotshotgunner", "jabbathehutt", "contrabandcybernetics", "riggedcargochute"]
       },
       {
         "pilot":"lattsrazzi",
+        "id":208,
         "threat":3,
         "upgrades":["bobafett", "bossk", "dengar", "feedbackarray", "staticdischargevanes"]
       },
       {
         "pilot":"bossk",
+        "id":209,
         "threat":3,
         "upgrades":["marksmanship", "greedo", "houndstooth"],
         "docked":{
           "ship":"z95af4headhunter",
           "pilot":"nashtahpup",
+        "id":210,
           "threat":3,
           "upgrades":[]
         }
       },
       {
         "pilot":"trandoshanslaver",
+        "id":211,
         "threat":3,
         "upgrades":["deadmansswitch", "houndstooth"],
         "docked":{
           "ship":"z95af4headhunter",
           "pilot":"nashtahpup",
+        "id":212,
           "threat":3,
           "upgrades":["protonrockets"]
         }
       },
       {
         "pilot":"moraloeval",
+        "id":213,
         "threat":4,
         "upgrades":["outmaneuver", "clustermissiles", "lattsrazzi", "dengar", "contrabandcybernetics"]
       }
@@ -1370,16 +1583,19 @@
     "pilots":[
       {
         "pilot":"cartelexecutioner",
+        "id":214,
         "threat":2,
         "upgrades":["crackshot", "r5p8", "contrabandcybernetics"]
       },
       {
         "pilot":"dalanoberos",
+        "id":215,
         "threat":2,
         "upgrades":["experthandling", "r5tk", "inertialdampeners"]
       },
       {
         "pilot":"toranikulda",
+        "id":216,
         "threat":3,
         "upgrades":["saturationsalvo", "protontorpedoes", "clustermissiles", "r4astromech", "inertialdampeners", "shieldupgrade"]
       }
@@ -1391,16 +1607,19 @@
     "pilots":[
       {
         "pilot":"lokrevenant",
+        "id":217,
         "threat":2,
         "upgrades":["dorsalturret", "bombletgenerator"]
       },
       {
         "pilot":"solsixxa",
+        "id":218,
         "threat":3,
         "upgrades":["ioncannonturret", "skilledbombardier", "connernets", "proximitymines"]
       },
       {
         "pilot":"captainnym",
+        "id":219,
         "threat":3,
         "upgrades":["squadleader", "trajectorysimulator", "r4astromech", "bombletgenerator", "havoc"]
       }
@@ -1412,22 +1631,26 @@
     "pilots":[
       {
         "pilot":"ig88a",
+        "id":220,
         "threat":6,
         "upgrades":["advancedsensors", "ig2000"],
         "docked":{
           "ship":"aggressorassaultfighter",
           "pilot":"ig88d",
+        "id":221,
           "threat":3,
           "upgrades":["advancedsensors", "ig2000"]
         }
       },
       {
         "pilot":"ig88b",
+        "id":222,
         "threat":6,
         "upgrades":["firecontrolsystem", "ioncannon", "ig2000"],
         "docked":{
           "ship":"aggressorassaultfighter",
           "pilot":"ig88c",
+        "id":223,
           "threat":3,
           "upgrades":["firecontrolsystem", "ioncannon", "ig2000"]
         }

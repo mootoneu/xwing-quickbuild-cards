@@ -23,13 +23,16 @@ or
     - A dot (•) to indicate that the pilot is limited
     - A force power symbol to indicate that the pilot has force power tokens
     - An illicit symbol for saw gerrera's partisant ships
-  - Point cost
+    - The pilot card when hovered on (when you pass the mouse over it)
+  - Point cost with
+    - The cost detail when hovered on (when you pass the mouse over it)
   - Threat level
 - In the middle:
   - List of all upgrade names with
     - One/Two symbols of the upgrade type
     - A dot (•) to indicate that the upgrade is limited
     - A force power symbol to indicate that the upgrade has force power tokens
+    - The upgrade card when hovered on (when you pass the mouse over it)
 - To the right:
   - A vertical "DUAL CARD #" to indicate the card is part of a pair named #. You must use both cards in your build. Note the costs are independent
 - At the bottom:
@@ -39,9 +42,9 @@ or
 ## Search card & preview
 To search for a card by its id, type it in the input text field on the top left of the page, then press tab or enter. The page will scroll automatically to this card id (if the card is not hidden) and highlight it in blue.
 
-Hover on a ship pilot name to view the corresponding card
+Hover on a ship pilot name to view the corresponding pilot card
 
-Hover on an upgrade name to view the corresponding name
+Hover on an upgrade name to view the corresponding upgrade card
 
 ## Ship cost & other informations
 The data come from [Guido Kessels' project xwing-data2](https://github.com/guidokessels/xwing-data2/)

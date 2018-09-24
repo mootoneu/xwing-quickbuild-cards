@@ -96,7 +96,6 @@ var qb = {
   },
 
   //Build cards
-  "nextCardId":0,
   "nextDual":"A",
   "dualCards":[],
   "buildCards":function() {
@@ -114,6 +113,7 @@ var qb = {
   "buildCard":function(pilot_qb, dual) {
     var card = $("<div>", {"class":"card"});
     var cost = 0;
+    var cost_text = "<span class='cost-tooltip'>";
 
     var pilot = this.getPilot(pilot_qb.pilot, pilot_qb.ship);
 
@@ -130,16 +130,20 @@ var qb = {
     title.appendTo(card);
     //update cost
     cost += pilot.cost;
+    cost_text += pilot.cost+"<br/>";
 
     //Get all upgrades
     var upgrades = [];
     for (var qb_upg of pilot_qb.upgrades) {
       var upgrade = this.getUpgrade(qb_upg);
       if (upgrade != null){
-        cost += this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
+        var upgrade_cost = this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
+        cost += upgrade_cost;
+        cost_text += upgrade_cost+"<br/>";
         upgrades.push(upgrade);
       }
     }
+    cost_text += "</span>";
 
     //double ship
     if (pilot_qb.hasOwnProperty("title") && pilot_qb.title == "2x ") {
@@ -148,7 +152,11 @@ var qb = {
 
     //Threat + Cost
     $("<span>", {"class":"threat threat-"+pilot_qb.threat, "text":pilot_qb.threat}).appendTo(card);
-    $("<span>", {"class":"cost", "text":cost}).appendTo(card);
+    var cost_span = $("<span>", {"class":"cost", "text":cost, "data-cost-detail":cost_text, "title":""});
+    cost_span.tooltip({"content":function() {
+      return $(this).data("cost-detail");
+    }});
+    cost_span.appendTo(card);
 
     //List of upgrades
     var upgrade_overflow = upgrades.length > 7?" upgrades-8":"";
@@ -179,7 +187,7 @@ var qb = {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
 
-    var data = {"div":card, "pilot":pilot, "qb":qb, "id":++this.nextCardId};
+    var data = {"div":card, "pilot":pilot, "qb":pilot_qb, "id":pilot_qb.id};
 
     var icon = $("<i>", {"class":"faction-icon faction-"+pilot.faction_xws, "data-id":data.id}).appendTo(card);
     icon.on('click', function() {
