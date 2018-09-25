@@ -234,10 +234,11 @@ var qb = {
   "exportCardXWS": function(card) {
     var xws = {};
     xws.version = "2.0.0";
+    xws.name = "Quickbuild "+card.pilot.xws+" #"+card.id;
     xws.faction = card.pilot.faction_xws;
     xws.pilots = [];
     var pilot = {};
-    pilot.name = card.pilot.xws;
+    pilot.id = card.pilot.xws;
     pilot.ship = card.pilot.ship.xws;
     var upgrades = {};
     for (var up of card.upgrades) {
