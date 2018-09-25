@@ -1,5 +1,12 @@
 var menu = {
   "filters":[],
+  "exportXWSInput":null,
+  "init":function (qb) {
+    this.buildSearchMenu("#m-search", qb);
+    this.buildExportMenu("#m-export", qb);
+    this.buildFactionsMenu("#m-factions", qb);
+    this.initFilters(localStorage.filters);
+  },
   "buildFactionsMenu":function (container_id, qb) {
     for (var faction of qb.xwingdata.factions) {
       var factiongroup = $("<div>", {"class":"faction faction-"+faction.xws});
@@ -39,8 +46,21 @@ var menu = {
 
       factiongroup.appendTo(container_id);
     }
+  },
+  "buildExportMenu":function (container_id, qb) {
+    var exportMenu = $(container_id);
 
-    var searchmenu = $("#m-search");
+    var exportMenu_input = $("<input>",{"type":"text", "name":"export-xws", "id":"export-xws",  "placeholder":"Selection in XWS format", "readonly":true})
+    exportMenu_input.appendTo(exportMenu);
+    this.exportXWSInput = exportMenu_input;
+    var copyButton = $("<input>",{"type":"button", "name":"export-copy",  "value":"Copy"})
+    copyButton.on("click", function() {
+      menu.copyToClipboard("#export-xws");
+    });
+    copyButton.appendTo(exportMenu);
+  },
+  "buildSearchMenu":function (container_id, qb) {
+    var searchmenu = $(container_id);
     var searchcard_input = $("<input>",{"type":"text", "name":"search-card",  "placeholder":"Card number"})
     searchcard_input.on("change", function() {
       qb.viewCard(parseInt(this.value));
@@ -65,6 +85,10 @@ var menu = {
       var xws = filter.split(":");
       $(".faction-"+xws[0]+" .ship-"+xws[1]).prop("checked", false);
     }
+  },
+  "copyToClipboard":function(input) {
+    $(input).select();
+    document.execCommand("copy");
   }
 };
 

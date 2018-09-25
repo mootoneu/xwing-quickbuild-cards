@@ -187,7 +187,7 @@ var qb = {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
 
-    var data = {"div":card, "pilot":pilot, "qb":pilot_qb, "id":pilot_qb.id};
+    var data = {"div":card, "pilot":pilot, "qb":pilot_qb, "upgrades":upgrades, "id":pilot_qb.id};
 
     var icon = $("<i>", {"class":"faction-icon faction-"+pilot.faction_xws, "data-id":data.id}).appendTo(card);
     icon.on('click', function() {
@@ -210,15 +210,65 @@ var qb = {
       return dual;
   },
 
+  //card to xws
+  "xwsSample": {
+    "faction": null,
+    "pilots": [
+        {
+            "id": null,
+            "upgrades": {},
+            "vendor": {
+                "xwing-quickbuild-cards": {
+                    "card_id": 30
+                }
+            }
+        }
+    ],
+    "vendor": {
+        "xwing-quickbuild-cards": {
+            "builder": "Elaum's Quickbuild card viewer",
+            "builder_link": "https://mootoneu.github.io/xwing-quickbuild-cards"
+        }
+    }
+  },
+  "exportCardXWS": function(card) {
+    var xws = {};
+    xws.version = "2.0.0";
+    xws.faction = card.pilot.faction_xws;
+    xws.pilots = [];
+    var pilot = {};
+    pilot.name = card.pilot.xws;
+    pilot.ship = card.pilot.ship.xws;
+    var upgrades = {};
+    for (var up of card.upgrades) {
+      if (!upgrades.hasOwnProperty(up.type)) {
+        upgrades[up.type] = [];
+      }
+      upgrades[up.type].push(up.xws);
+    }
+    pilot.upgrades = upgrades;
+    pilot.vendor = {};
+    pilot.vendor["xwing-quickbuild-cards"] = {};
+    pilot.vendor["xwing-quickbuild-cards"].card_id = card.id;
+    xws.pilots.push(pilot);
+    xws.vendor = {
+        "xwing-quickbuild-cards": {
+            "builder": "Elaum's Quickbuild card viewer",
+            "builder_link": "https://mootoneu.github.io/xwing-quickbuild-cards"
+        }
+    };
+    return xws;
+  },
+
   //card viewer
   "viewCard": function(card_id) {
     card = this.getCardById(card_id);
-    console.log(card);
     $([document.documentElement, document.body]).animate({
         scrollTop: card.div.offset().top
     }, 200);
     $(".search-selected").removeClass("search-selected");
     card.div.addClass("search-selected");
+    menu.exportXWSInput.val(JSON.stringify(this.exportCardXWS(card)));
   },
 
   //search data

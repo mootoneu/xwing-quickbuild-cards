@@ -45,8 +45,11 @@ or
 To search for a card by its id, type it in the input text field on the top left of the page, then press tab or enter. The page will scroll automatically to this card id (if the card is not hidden) and highlight it in blue.
 
 Hover on a ship pilot name to view the corresponding pilot card
-
 Hover on an upgrade name to view the corresponding upgrade card
+
+You can also select a card by clicking on the helmet icon on the bottom right corner of the card.
+
+Once a card is selected, the second input on the right will be filled with an XWS representation of the selected card.
 
 ## Ship cost & other informations
 The data come from [Guido Kessels' project xwing-data2](https://github.com/guidokessels/xwing-data2/)
