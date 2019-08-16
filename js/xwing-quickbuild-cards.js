@@ -9,7 +9,8 @@ var qb = {
     this.xwingdata = {
       "upgrades":[],
       "pilots":[],
-      "factions":[]
+      "factions":[],
+      "ships":[]
     };
     //load upgrades
     for (var upgradePath of xwingdata_manifest.upgrades) {
@@ -27,6 +28,8 @@ var qb = {
         var data = this.loadJSON(vendorRoot+shipPath);
         var ship_xws = this.xws(this.getFileName(shipPath));
         faction_ships.push(ship_xws)
+        data.faction_xws = faction.faction;
+        this.xwingdata.ships.push(data);
         for (var pilot of data.pilots) {
           pilot.faction_xws = faction.faction;
           pilot.ship = data;
