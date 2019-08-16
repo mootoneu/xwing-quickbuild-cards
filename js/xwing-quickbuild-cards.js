@@ -1,6 +1,6 @@
 var qb = {
   "init":function() {
-    this.loadQuickbuildData("js/xwing-quickbuild-cards.json");
+    //this.loadQuickbuildData("js/xwing-quickbuild-cards.json");
     this.loadXwingData("vendor/xwing-data2/");
   },
   //Load xwing-data
@@ -13,8 +13,10 @@ var qb = {
       "ships":[]
     };
     //load upgrades
+    this.xwingdata.upgrade_names = [];
     for (var upgradePath of xwingdata_manifest.upgrades) {
       var data = this.loadJSON(vendorRoot+upgradePath);
+      this.xwingdata.upgrade_names.push(this.getFileName(upgradePath))
       for (var upgrade of data) {
         upgrade.type = this.xws(this.getFileName(upgradePath));
         this.xwingdata.upgrades.push(upgrade);
@@ -29,6 +31,7 @@ var qb = {
         var ship_xws = this.xws(this.getFileName(shipPath));
         faction_ships.push(ship_xws)
         data.faction_xws = faction.faction;
+        data.card_count = 0;
         this.xwingdata.ships.push(data);
         for (var pilot of data.pilots) {
           pilot.faction_xws = faction.faction;
@@ -40,6 +43,17 @@ var qb = {
       }
       this.xwingdata.factions.push({"xws":faction.faction, "name":faction_name, "ships":faction_ships});
     }
+
+    //load quickbuilds
+    this.quickbuilds = [];
+    for (var qb_path of xwingdata_manifest["quick-builds"]) {
+      var data = this.loadJSON(vendorRoot+qb_path);
+      this.quickbuilds.push({
+        faction: this.xws(this.getFileName(qb_path)),
+        quickbuilds: data["quick-builds"]
+      });
+    }
+
   },
   "getFileName":function(path) {
     return path.split(/(\\|\/)/g).pop().replace(".json", "");
@@ -59,15 +73,10 @@ var qb = {
   			json = data;
   		},
       'error': function (data) {
-        console.log("Error", path)
+        console.log("Error", path, data)
   		},
   	});
     return json;
-  },
-
-  //Load Quickbuild cards data
-  "loadQuickbuildData":function(path) {
-    this.quickbuilds = this.loadJSON(path);
   },
 
   //Display cards
@@ -102,15 +111,36 @@ var qb = {
   "nextDual":"A",
   "dualCards":[],
   "buildCards":function() {
-    for (var ship_model of this.quickbuilds) {
-      for (var pilot_qb of ship_model.pilots) {
-        pilot_qb.faction = ship_model.faction;
-        pilot_qb.ship = ship_model.ship;
-        this.buildCard(pilot_qb, null);
+    var current_id = 1;
+    for (var faction_qb of this.quickbuilds) {
+      for (var card_qb of faction_qb.quickbuilds) {
+
+        var dual = null;
+        if (card_qb.pilots.length > 1) {
+          dual = this.getNextDual();
+        }
+
+        for (var pilot_qb of card_qb.pilots) {
+          pilot_qb.xws = pilot_qb.id;
+          pilot_qb.id = current_id++;
+          pilot_qb.threat = card_qb.threat;
+          pilot_qb.faction = faction_qb.faction_xws;
+
+          //flatten the upgrades array
+          var upgrades = [];
+          if (pilot_qb.hasOwnProperty("upgrades")) {
+            for (var up_name of this.xwingdata.upgrade_names) {
+              if (pilot_qb.upgrades.hasOwnProperty(up_name)) {
+                upgrades = upgrades.concat(pilot_qb.upgrades[up_name])
+              }
+            }
+          }
+          pilot_qb.upgrades_detail = pilot_qb.upgrades;
+          pilot_qb.upgrades = upgrades;
+
+          this.buildCard(pilot_qb, dual);
+        }
       }
-    }
-    for (var dualCard of this.dualCards) {
-      this.buildCard(dualCard[0], dualCard[1]);
     }
   },
   "buildCard":function(pilot_qb, dual) {
@@ -118,7 +148,9 @@ var qb = {
     var cost = 0;
     var cost_text = "<span class='cost-tooltip'>";
 
-    var pilot = this.getPilot(pilot_qb.pilot, pilot_qb.ship);
+    var pilot = this.getPilot(pilot_qb.xws);
+
+    pilot.ship.card_count++;
 
     //Ship icon
     $("<i>", {"class":"ship xwing-miniatures-ship xwing-miniatures-ship-"+pilot.ship.xws}).appendTo(card);
@@ -140,7 +172,7 @@ var qb = {
     for (var qb_upg of pilot_qb.upgrades) {
       var upgrade = this.getUpgrade(qb_upg);
       if (upgrade != null){
-        var upgrade_cost = this.getUpgradeCostForShip(upgrade.cost, pilot.ship);
+        var upgrade_cost = this.getUpgradeCostForShip(upgrade.cost, pilot);
         cost += upgrade_cost;
         cost_text += upgrade_cost+"<br/>";
         upgrades.push(upgrade);
@@ -179,13 +211,6 @@ var qb = {
     }
     ul.appendTo(card);
 
-    if (pilot_qb.hasOwnProperty("docked")) {
-      dual = this.getNextDual();
-      pilot_qb.docked.dual = dual;
-      pilot_qb.dual = dual;
-      pilot_qb.docked.faction = pilot.ship.faction;
-      this.dualCards.push([pilot_qb.docked, dual]);
-    }
     if (dual != null) {
       $("<span>", {"class":"dual", "text":dual}).appendTo(card);
     }
@@ -286,7 +311,7 @@ var qb = {
     console.warn("Unknown card ", card);
     return null;
   },
-  "getPilot": function(pilot_xws, ship_xws) {
+  "getPilotWithShip": function(pilot_xws, ship_xws) {
     for (var s = 0; s < this.xwingdata.pilots.length; ++s) {
       var pilot = this.xwingdata.pilots[s];
       if (pilot.xws === pilot_xws && pilot.ship.xws === ship_xws) {
@@ -296,6 +321,16 @@ var qb = {
     console.warn("Unknown pilot ", pilot_xws, ship_xws);
     return null;
   },
+  "getPilot": function(pilot_xws) {
+    for (var s = 0; s < this.xwingdata.pilots.length; ++s) {
+      var pilot = this.xwingdata.pilots[s];
+      if (pilot.xws === pilot_xws) {
+        return pilot;
+      }
+    }
+    console.warn("Unknown pilot ", pilot_xws);
+    return null;
+  },
   "getShip": function(ship_xws) {
     for (var s = 0; s < this.xwingdata.pilots.length; ++s) {
       var pilot = this.xwingdata.pilots[s];
@@ -303,7 +338,7 @@ var qb = {
         return pilot.ship;
       }
     }
-    console.warn("Unknown pilot ", pilot_xws, ship_xws);
+    console.warn("Unknown pilot ", ship_xws);
     return null;
   },
   "getUpgrade":function(name) {
@@ -316,28 +351,31 @@ var qb = {
     console.warn("Unknown upgrade ", name);
     return null;
   },
-  "getUpgradeCostForShip":function (cost, ship) {
+  "getUpgradeCostForShip":function (cost, pilot) {
     if (cost.hasOwnProperty("value")) {
       return cost.value;
     }
     if (cost.hasOwnProperty("variable")) {
       if (cost.variable === "size") {
-        return cost.values[ship.size];
+        return cost.values[pilot.ship.size];
       } else {
-        return cost.values[this.getStatByName(ship, cost.variable)];
+        return cost.values[this.getStatByName(pilot, cost.variable)];
       }
     }
-    console.warn("Unknown ship cost ", ship);
+    console.warn("Unknown ship cost ", pilot.ship);
     return null;
   },
-  "getStatByName":function (ship, statname) {
-    for (var i = 0; i < ship.stats.length; ++i) {
-      var stat = ship.stats[i];
+  "getStatByName":function (pilot, statname) {
+    if (statname == "initiative") {
+      return pilot.initiative;
+    }
+    for (var i = 0; i < pilot.ship.stats.length; ++i) {
+      var stat = pilot.ship.stats[i];
       if (stat.type === statname) {
         return stat.value;
       }
     }
-    console.warn("Unknown ship stat ", statname, ship);
+    console.warn("Unknown ship stat ", statname, pilot);
     return null;
   }
 };

@@ -40,11 +40,12 @@ var menu = {
         ship_input.appendTo(shipdiv);
 
         $("<i>",{"class":"xwing-miniatures-ship xwing-miniatures-ship-"+ship.xws}).appendTo(shipdiv);
-        $("<label>",{"for":"ship-"+ship.xws, "text":" "+ship.name+" "}).appendTo(shipdiv);
+        $("<label>",{"for":"ship-"+ship.xws, "text":" "+ship.name+" ("+ship.card_count+")"}).appendTo(shipdiv);
         shipdiv.appendTo(factiongroup);
       }
 
       factiongroup.appendTo(container_id);
+      $(".ship-faction-"+faction.xws).toggle();
     }
   },
   "buildExportMenu":function (container_id, qb) {

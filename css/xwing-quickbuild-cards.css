@@ -202,6 +202,13 @@ menu input[type="checkbox"] {
   margin-right: 4px !important;
 }
 
+#m-factions>span {
+  font-style: italic;
+  color: gray;
+  font-size: 75%;
+  padding-top: 2em;
+}
+
 /*Search*/
 .search-selected {
   background-color: #d8f0f3;
