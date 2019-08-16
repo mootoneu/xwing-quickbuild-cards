@@ -2,10 +2,21 @@ var menu = {
   "filters":[],
   "exportXWSInput":null,
   "init":function (qb) {
+    this.buildInfoMenu("#m-info", qb);
     this.buildSearchMenu("#m-search", qb);
     this.buildExportMenu("#m-export", qb);
     this.buildFactionsMenu("#m-factions", qb);
     this.initFilters(localStorage.filters);
+  },
+  "buildInfoMenu":function (container_id, qb) {
+    var infoMenu = $(container_id);
+
+    var version = $("<div>", {"id":"version"});
+    version.text("All the data displayed are retrieved with the help of the community from ");
+    var link = $("<a>", {"href":"https://github.com/guidokessels/xwing-data2"});
+    link.text("xwing-data2 (version "+qb.xwingdata.version+")")
+    link.appendTo(version)
+    version.appendTo(infoMenu)
   },
   "buildFactionsMenu":function (container_id, qb) {
     for (var faction of qb.xwingdata.factions) {

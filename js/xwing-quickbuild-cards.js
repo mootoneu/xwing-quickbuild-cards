@@ -10,7 +10,8 @@ var qb = {
       "upgrades":[],
       "pilots":[],
       "factions":[],
-      "ships":[]
+      "ships":[],
+      "version": xwingdata_manifest.version
     };
     //load upgrades
     this.xwingdata.upgrade_names = [];
