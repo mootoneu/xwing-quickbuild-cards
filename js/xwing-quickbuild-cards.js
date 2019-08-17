@@ -151,6 +151,11 @@ var qb = {
 
     var pilot = this.getPilot(pilot_qb.xws);
 
+    if (pilot == null) {
+      console.warn("An error occured while retrieving pilot", pilot_qb.xws, pilot_qb);
+      return;
+    }
+
     pilot.ship.card_count++;
 
     //Ship icon

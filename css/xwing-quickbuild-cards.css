@@ -132,9 +132,13 @@ i.ship
   bottom: 2mm;
   right: 0.5mm;
 }
-.faction-icon.faction-galacticempire:before {content: "y";}
-.faction-icon.faction-rebelalliance:before {content: "x";}
-.faction-icon.faction-scumandvillainy:before {content: "z";}
+.faction-icon.faction-galacticempire:before {content: "@";}
+.faction-icon.faction-rebelalliance:before {content: "!";}
+.faction-icon.faction-scumandvillainy:before {content: "#";}
+.faction-icon.faction-resistance:before {content: "-";}
+.faction-icon.faction-firstorder:before {content: "+";}
+.faction-icon.faction-galacticrepublic:before {content: "/";}
+.faction-icon.faction-separatistalliance:before {content: ".";}
 
 /*Dual cards*/
 .dual {
@@ -228,6 +232,8 @@ menu input[type="checkbox"] {
 .faction-scumandvillainy {color:#f78121;}
 .faction-resistance {color:#71bf45;}
 .faction-firstorder {color:black;}
+.faction-galacticrepublic {color:#b39e66;}
+.faction-separatistalliance {color:#787878;}
 
 /*Threat levels*/
 .threat-1 {color:#71bf45;}
@@ -250,6 +256,7 @@ menu input[type="checkbox"] {
 .upgrade-modification::before {content: "m "; font-family: XWing; font-style: normal;}
 .upgrade-sensor::before {content: "S "; font-family: XWing; font-style: normal;}
 .upgrade-talent::before {content: "E "; font-family: XWing; font-style: normal;}
+.upgrade-tacticalrelay::before {content: "Z "; font-family: XWing; font-style: normal;}
 .upgrade-tech::before {content: "X "; font-family: XWing; font-style: normal;}
 .upgrade-title::before {content: "t "; font-family: XWing; font-style: normal;}
 .upgrade-torpedo::before {content: "P "; font-family: XWing; font-style: normal;}
@@ -267,6 +274,7 @@ menu input[type="checkbox"] {
 .upgrade-slots-2.upgrade-missile::before {content: "MM ";}
 .upgrade-slots-2.upgrade-modification::before {content: "mm ";}
 .upgrade-slots-2.upgrade-sensor::before {content: "SS ";}
+.upgrade-slots-2.upgrade-tacticalrelay::before {content: "ZZ ";}
 .upgrade-slots-2.upgrade-talent::before {content: "EE ";}
 .upgrade-slots-2.upgrade-tech::before {content: "XX ";}
 .upgrade-slots-2.upgrade-title::before {content: "tt ";}
